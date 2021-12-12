@@ -1,0 +1,80 @@
+.background {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+
+  z-index: 1;
+
+  position: fixed;
+
+  .backgroundImg {
+    z-index: -1;
+    opacity: 0;
+    filter: contrast(70%), brightness(50%);
+    transform: scale(1.5);
+    position: absolute;
+    top: -10rem;
+
+    transition: all 2s;
+
+    object-fit: cover;
+  }
+
+  .wrapper {
+    max-width: 1120px;
+    margin: auto;
+
+    font-size: 3rem;
+
+    .header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      overflow: hidden;
+
+      padding: 0 2.625rem;
+
+      margin-top: 4rem;
+
+      height: 5rem;
+
+      img {
+        position: absolute;
+        top: 2rem;
+        left: 5rem;
+
+        height: 10rem;
+        width: 10rem;
+      }
+    }
+
+    .content {
+      margin-top: 2rem;
+      text-align: justify;
+
+      padding: 0 2rem 3rem;
+
+      height: calc(100vh - 11rem);
+
+      display: flex;
+      flex-direction: column;
+
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.404); 
+        border-radius: 8px;
+      }
+    
+
+      p {
+        margin-top: 2rem;
+      }
+    }
+  }
+}

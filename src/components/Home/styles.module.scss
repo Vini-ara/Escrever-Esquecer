@@ -1,0 +1,70 @@
+.wrapper {
+  max-width: 1600px;
+  max-height: 100vh;
+  padding: 2rem; 
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  overflow-y: hidden;
+
+  opacity: 0;
+  animation: opacity-in 2s 1s ease forwards; 
+
+  .header {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 3rem;
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .logoContainer {
+    max-height: calc(100vh - 3rem);
+    overflow-y: hidden;
+
+    margin-top: 1rem; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    filter: blur(5rem);
+
+    animation: blur-in 2s 2s ease-in-out forwards; 
+  }
+
+  &.transition {
+    animation: opacity-out 1s ease forwards;
+  }
+}
+
+@keyframes opacity-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes blur-in {
+  to {
+    filter: blur(0); 
+  }
+}
