@@ -8,12 +8,15 @@ import styles from "./styles.module.scss";
 export function Sobre() {
   const background = useRef()
 
+  // função para carregar a animação da imagem de fundo somente quando carregar ela
   function handleBackgroundLoad() {
     background.current.style.opacity = 0.15
   }
 
   return (
-    <div className={styles.background}>
+    <div className={styles.container}>
+
+      {/* imagem de fundo  */}
       <img
         className={styles.backgroundImg}
         src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
@@ -21,13 +24,19 @@ export function Sobre() {
         ref={background}
         onLoad={() => handleBackgroundLoad()}
       />
+
+      {/* div envolvendo o conteúdo */}
       <div className={styles.wrapper}>
+
+        {/* header com logo e texto */}
         <header className={styles.header}>
           <NavLink to="/home">
             <img src={Logo} alt="flamboyant" />
           </NavLink>
           <p>Para Zeca,</p>
         </header>
+
+        {/* texto principal da página */}
         <main className={styles.content}>
           <p>
             Este texto foi criado a partir de gravações feitas na cidade de Candeias, Bahia,

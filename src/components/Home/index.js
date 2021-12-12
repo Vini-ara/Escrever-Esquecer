@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import logo from "../../assets/flor.png";
 
@@ -10,6 +10,7 @@ export function Home() {
 
   const navigation = useNavigate();
 
+  // função para atrasar o redirect da página para dar tempo de realizar a animação
   function handleRedirect(path) {
     setTransition(true)
     setTimeout(() => navigation(path), 1000)
@@ -17,10 +18,12 @@ export function Home() {
 
   return(
     <div className={`${styles.wrapper} ${transition ? styles.transition : ''}`}>
+      {/* header com navegação */}
       <header className={styles.header}>
-        <a onClick={() => handleRedirect("/sobre")}>sobre / contato</a>
-        <NavLink to={''} className={styles.nav}>leve-me a qualquer lugar</NavLink>
+        <button onClick={() => handleRedirect("/sobre")}>sobre / contato</button>
+        <button to={''} className={styles.nav}>leve-me a qualquer lugar</button>
       </header>
+      {/* logo do site */}
       <div className={styles.logoContainer}>
         <img src={logo} alt="flamboyant" />
       </div>

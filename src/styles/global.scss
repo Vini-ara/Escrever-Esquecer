@@ -4,11 +4,14 @@
   box-sizing: border-box;
 }
 
+
+/* variaveis de cor */
 :root { 
   --background-white: rgb(214, 215, 210);
   --black: #000000; 
 }
 
+/* começo da responsividade */
 @media (max-width: 1080px) {
   html {
     font-size: 93.75%;
@@ -21,7 +24,13 @@
   }
 }
 
+
+/* estilos globais */
 body {
   background-color: var(--background-white);
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+button {
   font-family: 'Darker Grotesque', sans-serif;
 }

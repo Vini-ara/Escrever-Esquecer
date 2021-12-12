@@ -8,6 +8,7 @@ import { Introduction } from "./components/Introduction";
 import { Home } from "./components/Home";
 import { Sobre } from "./components/Sobre";
 
+// Basicamente define as rotas da aplicação
 function App() {
   return (
     <BrowserRouter>

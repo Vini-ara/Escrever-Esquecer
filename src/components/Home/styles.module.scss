@@ -19,9 +19,13 @@
     align-items: center;
     justify-content: space-between;
     
-    font-size: 3rem;
+    button {
+      font-size: 3rem;
+      font-weight:normal;
 
-    a {
+      border: none;
+      background-color: transparent;
+
       cursor: pointer;
       text-decoration: none;
       color: #000;
