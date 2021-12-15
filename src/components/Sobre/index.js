@@ -39,23 +39,33 @@ export function Sobre() {
         {/* texto principal da página */}
         <main className={styles.content}>
           <p>
-            Este texto foi criado a partir de gravações feitas na cidade de Candeias, Bahia,
-            em 2014. Estes registros foram inicialmente destinados a um trabalho de análise
-            linguística de seus enunciadores, tornando-se, ali, corpus. Com o tempo, as palavras se
-            impuseram às intenções da pesquisa – que em si já era suficientemente desinteressada.
+            Escrever Esquecer é aquilo que permanece da voz de alguém que calhou chamar-se Vítor Ribeiro-Santos. 
+            Há aqui a forma possível que assumiram diversos processos, ciclos, ritos nos quais um corpo e suas condições mergulharam, 
+            juntos, desde 2014, como maneira de se fazer sentir e dizer o mundo. 
+            Escrever Esquecer é também parte de um título de Jeanne-Marie Gagnebin, em um texto sobre a obra de Walter Benjamin: 
+            coincidência alguma nisso.
           </p>
           <p>
-            Talvez alguns argumentem que não há justiça em fazer das palavras das pessoas
-            algo tão diverso e alheio a suas intenções. O problema é que o próprio texto quer
-            argumentar a este favor, não restando dúvida sobre o veredito final: falar é defender,
-            com toda a razão, as mais torpes injustiças.
+            <i>Escrever Esquecer</i>, além disso: Beatriz Calheta, Letícia Hayashi e Vítor Rodrigues – 
+            editoras/criadoras e realizador/criador das formas de tudo que está aqui. 
+            A eles, simplesmente tudo.
           </p>
           <p>
-            Por isso, quando ser injusto torna-se o modelo das ações e do modo de vida
-            daqueles que pautam os destinos dos debates neste país, a questão parece ser requisitar
-            para as palavras sua própria injustiça essencial. Ela é o oposto do cinismo, ferramenta
-            inútil de quem pretende disfarçar o mundo, o corpo, o nada.
+          Nosso sítio está dividido em algumas seções: <i>Algumas cartas</i>, <i>Escrever com os pés</i>, <i>olhos/água</i>
+          , <i>No meio dia das coisas</i>, <i>Prosa dos dias</i>, <i>Ter olhos pra ver</i>, <i>Toamasina</i>. 
+          Cada uma dessas seções diz respeito a um ciclo crítico ou criativo diferente, oriundo de anos diferentes, 
+          com intenções diferentes. Um continente em suas cidades. Por isso, mesmo como unidades autônomas, 
+          cada pedaço deste lugar funciona interdependentemente, pode ser acessado por novas estradas – 
+          o botão <i>Leve-me a qualquer lugar</i> é parte desta ideia modesta.
           </p>
+          <p>
+            Mas por que criar isto aqui, a esta altura dos acontecimentos? 
+            Ora, sim. Pra mais urgente das perguntas, talvez nenhuma resposta seja necessária. 
+            Escrever Esquecer quer existir da mesma maneira como é possível que espécies chamem 
+            – de alguma forma – a escuridão abissal de casa. A vida persiste a contragosto de si. 
+            Se você trouxe sua voz, se você está agora aqui, seu corpo diz ao mundo que, uma vez mais, prosseguimos.
+          </p>
+          <p>Obrigado. E mais nada resta a falar.</p>
         </main>
       </div>
     </div>
