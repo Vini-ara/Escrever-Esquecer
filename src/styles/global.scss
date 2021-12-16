@@ -1,14 +1,15 @@
 * {
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-
 /* variaveis de cor */
-:root { 
+:root {
   --background-white: rgb(214, 215, 210);
-  --black: #000000; 
+  --black: #000000;
+  --red-500: #e15b64;
+  --red-300: #DF919E; 
 }
 
 /* começo da responsividade */
@@ -24,13 +25,20 @@
   }
 }
 
-
 /* estilos globais */
 body {
   background-color: var(--background-white);
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
 }
 
 button {
-  font-family: 'Darker Grotesque', sans-serif;
+  font-family: "Darker Grotesque", sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }

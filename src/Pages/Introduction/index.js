@@ -1,13 +1,23 @@
-import { useState } from "react";
-import styles from "./styles.module.scss";
-import YoutubeBackground from 'react-youtube-background'
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
+import YoutubeBackground from 'react-youtube-background'
+
+import styles from "./styles.module.scss";
 
 export function Introduction() {
   const [transition, setTransition] = useState(false)
   const [ready, setReady] = useState(false)
   
   const navigation = useNavigate();
+
+  const viewWidth = window.innerWidth
+
+  useEffect(() => {
+    if(viewWidth < 1024) {
+      navigation("home")
+    }
+  }, [viewWidth, navigation])
 
   return (
     <div className={styles.wrapper}>

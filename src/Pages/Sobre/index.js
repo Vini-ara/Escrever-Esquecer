@@ -1,12 +1,24 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-import { NavLink } from "react-router-dom";
+import { Header } from "../../components/Header";
 
-import Logo from "../../assets/flor.png";
 import styles from "./styles.module.scss";
 
 export function Sobre() {
-  const background = useRef()
+  const [transition, setTransition] = useState(false);
+  const background = useRef();
+
+  const navigation = useNavigate();
+
+  function handleRedirect(path) {
+    if(path === window.location.pathname) {
+      return window.location.reload()
+    } else {
+      setTransition(true)
+      setTimeout(() => navigation(path), 1000)
+    }
+  }
 
   // função para carregar a animação da imagem de fundo somente quando carregar ela
   function handleBackgroundLoad() {
@@ -14,7 +26,7 @@ export function Sobre() {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
 
       {/* imagem de fundo  */}
       <img
@@ -25,16 +37,14 @@ export function Sobre() {
         onLoad={() => handleBackgroundLoad()}
       />
 
+      <Header handleRedirect={handleRedirect}/>
+
       {/* div envolvendo o conteúdo */}
       <div className={styles.wrapper}>
 
-        {/* header com logo e texto */}
-        <header className={styles.header}>
-          <NavLink to="/home">
-            <img src={Logo} alt="flamboyant" />
-          </NavLink>
-          <p>Para Zeca,</p>
-        </header>
+        {/* dedicatória */}
+
+        <p className={styles.Dedicatoria}>Para Zeca,</p>
 
         {/* texto principal da página */}
         <main className={styles.content}>

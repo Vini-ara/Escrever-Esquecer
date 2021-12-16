@@ -1,12 +1,19 @@
+import { useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import { Header } from "../../components/Header";
+import { Card } from "../../components/Card";
+
 import styles from "./styles.module.scss";
 import Logo from "../../assets/flor.png";
-import { NavLink } from "react-router-dom";
-import { useRef, useState } from "react";
 
-export function Ciclos() {
+export function Home() {
   const [showCiclos, setShowCiclos] = useState(false);
+  const [transition, setTransition] = useState(false);
 
-  const CardContainer = useRef()
+  const CardContainer = useRef();
+
+  const navigation = useNavigate();
 
   function handleScroll(e) {
     const target = CardContainer.current
@@ -18,25 +25,15 @@ export function Ciclos() {
     })
   }
 
-  return (
-    <div className={styles.wrapper}>
+  function handleRedirect(path) {
+    setTransition(true)
+    setTimeout(() => navigation(path), 1000)
+  }
 
-      <header className={styles.header}>
-        <NavLink to="/home">
-          <img src={Logo} alt="flamboyant" />
-          <h1>
-            ESCREVER <strong>ESQUECER</strong>
-          </h1>
-        </NavLink>
-        <nav>
-          <NavLink to="/sobre">
-            sobre / contato
-          </NavLink>
-          <NavLink to="">
-            leve-me a qualquer lugar
-          </NavLink>
-        </nav>
-      </header>
+  return (
+    <div className={`${styles.wrapper} ${transition ? styles.transition : ''}`}>
+
+      <Header handleRedirect={handleRedirect} />
 
       <img
         className={`${styles.backgroundImg}
@@ -49,17 +46,11 @@ export function Ciclos() {
 
       {showCiclos && (
         <div className={styles.content} onWheel={handleScroll} ref={CardContainer}>
-        <div className={`${styles.card} ${styles.card1}`} onWheel={handleScroll}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+          <Card cardNumber={1} onWheel={handleScroll} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9">
             <h2>Pronunciar o Chão</h2>
-          </div>
-        </div>
-        <div className={`${styles.card} ${styles.card2}`} onWheel={(e) => handleScroll(e)}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+          </Card>
+          <Card cardNumber={2} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
             <h2>Algumas Cartas</h2>
-
             <p>
               Os textos que compõem este ciclo faziam parte de um processo que se chamou <i>Beatriz / Cartas</i> ,
               até ser dissolvido. Ele era inicialmente constituído de três grandes roteiros – Paris, São Paulo,
@@ -69,11 +60,8 @@ export function Ciclos() {
               girando ao redor de si.
             </p>
             <p>Glosa: um corpo precisa existir para enunciar seu próprio fim.</p>
-          </div>
-        </div>
-        <div className={`${styles.card} ${styles.card3}`} onWheel={(e) => handleScroll(e)}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+          </Card>
+          <Card cardNumber={3} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
             <h2>Ter Olhos pra Ver</h2>
             <p>
               O verso de Nelson Cavaquinho para lembrar de como a experiência do cinema é uma experiência do corpo.
@@ -85,23 +73,15 @@ export function Ciclos() {
               Abrir-se para um discurso sobre a experiência sensível que o cinema não cessa de possibilitar.
             </p>
             <p>Vamos ver o que vai dar.</p>
-          </div>
-        </div>
-        <div className={`${styles.card} ${styles.card4}`} onWheel={(e) => handleScroll(e)}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+
+          </Card>
+          <Card cardNumber={4} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
             <h2>Um som estrangeiro</h2>
-          </div>
-        </div>
-        <div className={`${styles.card} ${styles.card5}`} onWheel={(e) => handleScroll(e)}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+          </Card>
+          <Card cardNumber={5} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
             <h2>O Sistema Exu-Ogum</h2>
-          </div>
-        </div>
-        <div className={`${styles.card} ${styles.card6}`} onWheel={(e) => handleScroll(e)}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+          </Card>
+          <Card cardNumber={6} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
             <h2>Toamasina</h2>
             <p>
               A ideia destes textos veio do amor pela figura de Charles Darwin, o maior dos viajantes. <i>Toamasina</i> –
@@ -110,11 +90,8 @@ export function Ciclos() {
               se traçar esses limites. Olhar para a vida das plantas, como muitos têm feito com resultados impressionantes
               – de Timothy Morton a Emanuele Coccia – é, de fato, uma saída ética e política, pela porta da frente.
             </p>
-          </div>
-        </div>
-        <div className={`${styles.card} ${styles.card7}`} onWheel={(e) => handleScroll(e)}>
-          <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="card" />
-          <div className={styles.cardContent}>
+          </Card>
+          <Card cardNumber={7} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
             <h2>No meio-dia das coisas</h2>
             <p>
               Aqui está um ciclo estético ainda vivente, atualizado, falível.
@@ -123,9 +100,8 @@ export function Ciclos() {
               Daquilo que faz com que uma coisa não sejam duas. E do que se mostra como invenção da visão pelo ponto de vista.
             </p>
             <p>Está claro que estamos na dobra da palavra.</p>
-          </div>
+          </Card>
         </div>
-      </div>
       )}
     </div>
   );

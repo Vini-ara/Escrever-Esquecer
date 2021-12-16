@@ -1,0 +1,76 @@
+.header {
+  max-width: 1600px;
+  width: 100%;
+  height: 6rem;
+
+  padding: 0 2rem; 
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .Logo {
+    width: fit-content;
+    display: flex;
+    border: none;
+    background-color: var(--background-white);
+    color: var(--black);
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+
+    img {
+      height: 6rem;
+      width: 6rem;
+  
+      -webkit-user-drag: none;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+
+    h1 {
+      height: 100%; 
+      line-height: 1.5rem; 
+    }
+  
+    strong {
+      display: block;
+      margin-left: 1rem;
+    }
+  }
+
+  nav {
+    display: flex;
+
+    font-size: 2rem; 
+
+    button {
+      margin-left: 1rem;
+      border: none; 
+      background-color: transparent;
+
+      font-size: 2rem;
+
+      padding: 0 .5rem .25rem; 
+      cursor: pointer;
+    }
+
+    .random {
+      background-color: var(--red-500);
+      border-radius: 2rem;
+      
+      text-align: center;
+
+      transition: filter 0.3s; 
+
+      &:hover {
+        filter: brightness(.9); 
+      }
+    }
+  }
+}

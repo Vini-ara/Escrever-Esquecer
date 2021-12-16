@@ -6,6 +6,12 @@
   z-index: 1;
 
   position: fixed;
+
+  animation: opacity-in 2s ease forwards;
+
+  &.transition {
+    animation: opacity-out 1s ease forwards;
+  }
   
   .backgroundImg {
     z-index: -1;
@@ -20,38 +26,21 @@
     object-fit: cover;
   }
 
+  
   .wrapper {
     max-width: 1120px;
-    margin: auto;
-
-    font-size: 3rem;
-
-    .header {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      overflow: hidden;
-
-      padding: 0 2.625rem;
-
-      margin-top: 4rem;
-
-      height: 5rem;
-
-      img {
-        position: absolute;
-        top: 2rem;
-        left: 5rem;
-
-        height: 10rem;
-        width: 10rem;
-      }
+    margin: 1rem auto 0;
+    
+    font-size: 2rem;
+    
+    .Dedicatoria {
+      text-align: end;
+      padding-right: 2.625rem;
     }
 
     .content {
-      margin-top: 2rem;
       text-align: justify;
-
+      margin-top: 1rem;
       padding: 0 2rem 3rem;
 
       height: calc(100vh - 11rem);
@@ -70,12 +59,32 @@
         background: rgba(0, 0, 0, 0.404); 
         border-radius: 8px;
       }
+
+      scrollbar-color: rgba(0, 0, 0, 0.404) transparent;
+      scrollbar-width: 10px;
     
 
       p {
         margin-top: 2rem;
-        
       }
     }
+  }
+}
+
+@keyframes opacity-in {
+  from{
+    opacity: 0; 
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-out {
+  from { 
+    opacity: 1; 
+  }
+  to {
+    opacity: 0;
   }
 }
