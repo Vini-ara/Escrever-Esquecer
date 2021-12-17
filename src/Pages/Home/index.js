@@ -26,6 +26,7 @@ export function Home() {
   }
 
   function handleRedirect(path) {
+    console.log(path)
     setTransition(true)
     setTimeout(() => navigation(path), 1000)
   }
@@ -46,10 +47,20 @@ export function Home() {
 
       {showCiclos && (
         <div className={styles.content} onWheel={handleScroll} ref={CardContainer}>
-          <Card cardNumber={1} onWheel={handleScroll} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9">
+
+          <Card
+            cardNumber={1}
+            onWheel={handleScroll}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+          >
             <h2>Pronunciar o Chão</h2>
           </Card>
-          <Card cardNumber={2} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
+
+          <Card
+            cardNumber={2}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            onWheel={handleScroll}
+          >
             <h2>Algumas Cartas</h2>
             <p>
               Os textos que compõem este ciclo faziam parte de um processo que se chamou <i>Beatriz / Cartas</i> ,
@@ -61,7 +72,12 @@ export function Home() {
             </p>
             <p>Glosa: um corpo precisa existir para enunciar seu próprio fim.</p>
           </Card>
-          <Card cardNumber={3} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
+
+          <Card
+            cardNumber={3}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            onWheel={handleScroll}
+          >
             <h2>Ter Olhos pra Ver</h2>
             <p>
               O verso de Nelson Cavaquinho para lembrar de como a experiência do cinema é uma experiência do corpo.
@@ -73,15 +89,31 @@ export function Home() {
               Abrir-se para um discurso sobre a experiência sensível que o cinema não cessa de possibilitar.
             </p>
             <p>Vamos ver o que vai dar.</p>
-
           </Card>
-          <Card cardNumber={4} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
+
+          <Card
+            cardNumber={4}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            onWheel={handleScroll}
+          >
             <h2>Um som estrangeiro</h2>
           </Card>
-          <Card cardNumber={5} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
+
+          <Card
+            cardNumber={5}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            onWheel={handleScroll}
+          >
             <h2>O Sistema Exu-Ogum</h2>
           </Card>
-          <Card cardNumber={6} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
+
+          <Card
+            cardNumber={6}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            onWheel={handleScroll}
+            pathTo="/toamasina"
+            redirectFunction={handleRedirect}
+          >
             <h2>Toamasina</h2>
             <p>
               A ideia destes textos veio do amor pela figura de Charles Darwin, o maior dos viajantes. <i>Toamasina</i> –
@@ -91,7 +123,12 @@ export function Home() {
               – de Timothy Morton a Emanuele Coccia – é, de fato, uma saída ética e política, pela porta da frente.
             </p>
           </Card>
-          <Card cardNumber={7} imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" onWheel={handleScroll}>
+
+          <Card
+            cardNumber={7}
+            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            onWheel={handleScroll}
+          >
             <h2>No meio-dia das coisas</h2>
             <p>
               Aqui está um ciclo estético ainda vivente, atualizado, falível.

@@ -8,6 +8,7 @@ import { Introduction } from "./Pages/Introduction";
 
 import { Sobre } from "./Pages/Sobre";
 import { Home } from "./Pages/Home";
+import { Toamasina } from "./Pages/Ciclos/Toamasina";
 
 // Basicamente define as rotas da aplicação
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' exact element={<Introduction/>} />
         <Route path='/home' element={<Home />}/>
         <Route path="/sobre" element={<Sobre/>} />
+        <Route path='/toamasina' element={<Toamasina />} />
       </Routes>
     </BrowserRouter>
   );

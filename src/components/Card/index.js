@@ -4,11 +4,11 @@ import { Loading } from "../Loading";
 
 import styles from "./styles.module.scss";
 
-export function Card({ cardNumber, imgSrc, children }) {
+export function Card({ cardNumber, imgSrc, children, pathTo, redirectFunction }) {
   const [isLoading, setIsLoading] = useState(true)
 
   return (
-    <div className={`${styles.card} ${styles[`card${cardNumber}`]}`}>
+    <div className={`${styles.card} ${styles[`card${cardNumber}`]}`} onClick={() => redirectFunction(pathTo)}>
 
       <img
         className={`${styles.cardImg} ${!isLoading ? styles.imgActive : ''}`}
