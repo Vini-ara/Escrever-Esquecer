@@ -1,6 +1,6 @@
-import styles from "./styles.module.scss";
+import styles from "../ciclos.module.scss";
 
-import { Header } from "../../components/Header";
+import { Header } from "../../../components/Header";
 
 export function Toamasina() {
   return (

@@ -52,8 +52,17 @@ export function Home() {
             cardNumber={1}
             onWheel={handleScroll}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            pathTo="/pronunciar-o-chao"
+            redirectFunction={handleRedirect}
           >
             <h2>Pronunciar o Chão</h2>
+            <p>
+              Os textos deste volume, pela primeira vez pensados como um conjunto, foram escritos entre os anos de 2018 e 2021. 
+              Desta forma, faz-se aqui um esforço para que eles, muitas vezes espaçados por anos, 
+              lugares e pelo testemunho dos mais diversos fatos, não se tornem nem redundantes nem meramente contraditórios, 
+              mas se espraiem como que induzidos por seus movimentos recíprocos. 
+              Se o futebol é uma teoria sobre o acontecimento, aqui se está também a jogar.
+            </p>
           </Card>
 
           <Card
