@@ -1,3 +1,24 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+}
+
+.backgroundImg {
+  min-height: 100vh;
+  max-width: 100vw;
+  z-index: -1;
+
+  opacity: 0.2;
+  transform: scale(1.4);
+  filter: contrast(70%), brightness(50%);
+  position: absolute;
+
+
+  object-fit: cover;
+}
+
 .wrapper {
   max-width: 1600px;
   max-height: calc(100vh - 6rem);
@@ -8,6 +29,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
+  background-color: transparent;
 
   .about {
     padding-right: 2rem;
@@ -18,7 +40,7 @@
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.65rem;
       text-align: justify;
       text-indent: 1rem;
     }
@@ -32,6 +54,7 @@
     display: grid;
 
     grid-template-columns: 1fr 2rem;
+    padding: 1rem 2rem;
   }
 }
 

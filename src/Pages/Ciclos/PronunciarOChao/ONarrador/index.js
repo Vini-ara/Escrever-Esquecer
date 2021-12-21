@@ -69,8 +69,8 @@ export function ONarrador() {
           nota-se um tipo de comentário sobre o jogo, muito mais do que efetivamente uma narração: as falas simplesmente 
           tentam <i>constatar</i> o que houve, como uma tautologia entre o que é dito e o que é visto. Por outro lado, nos países 
           de cultura latina mais forte essa relação assume planos muito mais marcantes em uma defasagem: narrar e 
-          comentar o jogo significa <a href="https://www.youtube.com/watch?v=Xz71Pl2NGQk">incumbir-se</a> de&nbsp; 
-          <a href="https://www.youtube.com/watch?v=iFgEQ0atB3U">motivá-lo</a>, significa enunciar saberes sobre o visto, compartilhar o 
+          comentar o jogo significa <a href="https://www.youtube.com/watch?v=Xz71Pl2NGQk" target="_blank" rel="noreferrer">incumbir-se</a> de&nbsp; 
+          <a href="https://www.youtube.com/watch?v=iFgEQ0atB3U" target="_blank" rel="noreferrer">motivá-lo</a>, significa enunciar saberes sobre o visto, compartilhar o 
           real uma vez mais como potência de um saber, e não como algo óbvio ou já dado. <i>O futebol é uma caixinha 
           de surpresas, clássico é clássico e vice-versa, pênalti é loteria, quem não faz, toma</i> são frases que, ao serem 
           evocadas durante uma partida, trazem consigo toda uma historicidade própria do jogo, transformam em tempo real 
@@ -86,7 +86,7 @@ export function ONarrador() {
           tentativas de nexo social ainda subjazem à razão pretensamente moderna, sendo a palavra ainda 
           incumbida de ser portadora de história, feixe simultâneo ao real. O ímpeto da narrativa é a vontade 
           de pessoalidade e corporalidade do mundo, e nisso nota-se como narradores de futebol precisam 
-          de bordões, de <a href="https://www.youtube.com/watch?v=1I4HVnRScHA">entonações particulares</a>, 
+          de bordões, de <a href="https://www.youtube.com/watch?v=1I4HVnRScHA" target="_blank" rel="noreferrer">entonações particulares</a>, 
           de birras próprias, de especulações sobre seu time do coração para que as pessoas possam amá-los 
           ou odiá-los enquanto o jogo acontece sob o ritmo de sua voz. Apesar, indiferentemente e por 
           causa dela. É desta forma que o saber popular traduz-se em corpo, e vice-versa. 

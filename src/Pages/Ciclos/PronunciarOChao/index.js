@@ -92,8 +92,15 @@ export function PronunciarOChao() {
   console.log(window.location.pathname)
 
   return (
-    <>
+    <div className={styles.container}>
+      <img
+        className={styles.backgroundImg}
+        src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+        alt="plano de fundo"
+      />
       <Header />
+
+
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
@@ -119,6 +126,6 @@ export function PronunciarOChao() {
         </div>
 
       </section>
-    </>
+    </div>
   )
 }

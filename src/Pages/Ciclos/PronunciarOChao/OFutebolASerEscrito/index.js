@@ -10,6 +10,7 @@ export function OFutebolASerEscrito() {
     <>
       <Header />
 
+      
       <section className={styles.wrapper}>
         <h2>O futebol a ser escrito</h2>
         <hr/>
@@ -36,7 +37,7 @@ export function OFutebolASerEscrito() {
           mas distinto, daquilo que foi inicialmente pensado. Você pode chutar uma bola para frente sem saber aonde ela irá chegar: 
           sua única garantia é que é pouco provável – não se diz aqui impossível – que ela vá para trás. Você pode escrever mirando 
           em um jogo como o futebol: há aí a ideia de que não se sentirá/entenderá algo como <i>nuvens cobrem o Estado do Arizona</i>,&nbsp;
-          <a href="https://www.youtube.com/watch?v=1Vqmm3vNH3E">provavelmente</a>. Mas o jogo deve ser jogado - o texto deve ser escrito 
+          <a href="https://www.youtube.com/watch?v=1Vqmm3vNH3E" target="_blank" rel="noreferrer">provavelmente</a>. Mas o jogo deve ser jogado - o texto deve ser escrito 
           - e as certezas por aí param.
         </p>
         <p>
@@ -55,7 +56,7 @@ export function OFutebolASerEscrito() {
           de diversas outras formas, áreas, regiões para fazer-se ressoar. A soberania da escrita de Nelson Rodrigues na 
           crônica esportiva é a prova disso: a permanência de seus textos para muito além dos jogos sobre os quais o autor 
           debruçara está justamente em sua capacidade de transformar o jogo em <i>evento</i>, isto é, em narrativas, personagens, 
-          valores, entidades. <a href="https://www.youtube.com/watch?v=T-qiJEnm_0Q">É preciso ficcionalizar o jogo para enunciá-lo</a>: 
+          valores, entidades. <a href="https://www.youtube.com/watch?v=T-qiJEnm_0Q" target="_blank" rel="noreferrer">É preciso ficcionalizar o jogo para enunciá-lo</a>: 
           e como uma ficção não anula outra ficção, este processo também calha de não ter fim.
         </p>
         <p>
