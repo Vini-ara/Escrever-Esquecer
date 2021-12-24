@@ -26,7 +26,7 @@ export function Home() {
   }
 
   function handleRedirect(path) {
-    console.log(path)
+    
     setTransition(true)
     setTimeout(() => navigation(path), 1000)
   }
@@ -118,7 +118,7 @@ export function Home() {
 
           <Card
             cardNumber={6}
-            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            imgSrc="https://drive.google.com/uc?export=view&id=1gV3lXRHm44I15qcfgL7eSfx-TRxqyBod"
             onWheel={handleScroll}
             pathTo="/toamasina"
             redirectFunction={handleRedirect}

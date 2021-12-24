@@ -1,47 +1,77 @@
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
 import styles from "../ciclos.module.scss";
 
 import { Header } from "../../../components/Header";
+import { TextsPagination } from "../../../components/TextsMenuPagination";
+import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
+import { data } from "../../../data/data";
+
 
 export function Toamasina() {
+  const [page, setPage] = useState(1);
+  const [transition, setTransition] = useState(false);
+
+  const navigation = useNavigate();
+
+  const background = useRef();
+
+  const info = data["toamasina"].data
+
+  function handleNavClick(pageNumber) {
+    setPage(pageNumber)
+  }
+
+  function handleBackgroundLoad() {
+    background.current.style.opacity = 0.15
+  }
+
+
+  function handleRedirect(path) {
+
+    setTransition(true)
+    setTimeout(() => navigation(path), 1000)
+  }
+
+
   return (
-    <>
-      <Header />
+    <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
+      <img
+        className={styles.backgroundImg}
+        src="https://drive.google.com/uc?export=view&id=1gV3lXRHm44I15qcfgL7eSfx-TRxqyBod"
+        alt="plano de fundo"
+        ref={background}
+        onLoad={handleBackgroundLoad}
+      />
+      <Header handleRedirect={handleRedirect} />
+
+
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
           <h2>Toamasina</h2>
           <p>
-              O verso de Nelson Cavaquinho para lembrar de como a experiência do cinema é uma experiência do corpo.
-              <i>Ter olhos para ver</i> é um ciclo de textos que foram encomendados inicialmente para tratar de tópicos do cinema
-              brasileiro: mas muito além de críticas, temos aqui declarações verborrágicas de amor.
-            </p>
-            <p>
-              Nas revisões para além de seu contexto inicial, esta seção está em vias de tornar-se outra coisa.
-              Abrir-se para um discurso sobre a experiência sensível que o cinema não cessa de possibilitar.
-            </p>
-            <p>Vamos ver o que vai dar.</p>
+            A ideia destes textos veio do amor pela figura de Charles Darwin, o maior dos viajantes. <i>Toamasina</i> –
+            que também já se chamou <i>Flores Vermelhas</i> e <i>Ver Flores Vermelhas</i> – é a tentativa de compreender como
+            a experiência do espaço é, ao mesmo tempo, histórica e a-histórica, sem que haja margem clara para
+            se traçar esses limites. Olhar para a vida das plantas, como muitos têm feito com resultados impressionantes
+            – de Timothy Morton a Emanuele Coccia – é, de fato, uma saída ética e política, pela porta da frente.
+          </p>
         </div>
-        <div className={styles.content}> 
-          <div className={styles.card}>
-            <img 
-              src="https://drive.google.com/uc?export=view&id=10bW91H9UNbW6yEsknWteiUkroF5hOsq3" 
-              alt="flamboyant" />
-            <h3>As fotografias</h3>
-          </div>
-          <div className={`${styles.card} ${styles.card2}`}>
-            <img 
-              src="https://drive.google.com/uc?export=view&id=1vQ20mL2VSBKnnrU-uikWj6ZxvRdvd68N" 
-              alt="por do sol" />
-            <h3>Mi candidato es el pueblo, organizado y construyendo</h3>
-          </div>
-          <div className={styles.card}>
-            <img 
-              src="https://drive.google.com/uc?export=view&id=1VKn3u3lAE2iGXdVMPqtqzdmvwrj-qYN4" 
-              alt="Capa de um livro" />
-            <h3>Da abstração</h3>
-          </div>
-        </div>  
+
+        <div className={styles.contentWrapper}>
+          {info.map((e, index) => (
+            <TextsPagination key={e.heading} data={e} isActive={page === index + 1} handleRedirect={handleRedirect} />
+          ))}
+          <TextsPaginationNav
+            handleNavClick={handleNavClick}
+            activePage={page}
+            pages={info}
+          />
+        </div>
+
       </section>
-    </>
-  );
+    </div>
+  )
 }

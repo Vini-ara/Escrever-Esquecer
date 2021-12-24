@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 
 export function TextsPaginationNav({pages, handleNavClick, activePage}) {
+  
   return(
     <div className={styles.contentNavigation}>
       {pages.map((e, index) => (

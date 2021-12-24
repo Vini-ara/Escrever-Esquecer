@@ -1,104 +1,50 @@
+import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
 import styles from "../ciclos.module.scss";
 
 import { Header } from "../../../components/Header";
-import { TextsPagination } from "../../../components/TextsPagination";
-import { useState } from "react";
-import { TextsPaginationNav } from "../../../components/TextsPaginationNav";
-
+import { TextsPagination } from "../../../components/TextsMenuPagination";
+import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
+import { data } from "../../../data/data";
 
 
 export function PronunciarOChao() {
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(1);
+  const [transition, setTransition] = useState(false); 
 
+  const navigation = useNavigate(); 
 
+  const background = useRef();
 
-  const data = [
-    {
-      heading: "Escrever com os pés",
-      content: [
-        {
-          name: "O futebol a ser escrito",
-          href: "o-futebol-a-ser-escrito"
-        },
-        {
-          name: "O narrador",
-          href: "o-narrador"
-        }
-      ]
-    },
-    {
-      heading: "Poéticas do futebol",
-      content: [
-        {
-          name: "Topologias do jogo",
-        },
-        {
-          name: "Imagens, imagens",
-        },
-        {
-          name: "Ainda a lei",
-        },
-        {
-          name: "Ingenuidade",
-        },
-        {
-          name: "Núcleos vazios",
-        },
-        {
-          name: "Diante do outro, em nome de si"
-        }
-      ]
-    },
-    {
-      heading: "O corpo, o algo, o nada",
-      content: [
-        {
-          name: "Todo futebol é feminino",
-        },
-        {
-          name: "Afetação",
-        },
-        {
-          name: "Imagens da violência",
-        },
-        {
-          name: "Melancolia de Time",
-        },
-        {
-          name: "Pé",
-        }
-      ]
-    },
-    {
-      heading: "Deus é um gol sem trave",
-      content: [
-        {
-          name: "Mas se deus é por nós",
-        },
-        {
-          name: "Alianças demoníacas",
-        },
-        {
-          name: "Os deuses do futebol",
-        }
-      ]
-    }
-  ]
+  const info = data["pronunciarOChao"].data
 
   function handleNavClick(pageNumber) {
     setPage(pageNumber)
   }
 
-  console.log(window.location.pathname)
+  function handleBackgroundLoad() {
+    background.current.style.opacity = 0.15
+  }
+
+  
+  function handleRedirect(path) {
+    
+    setTransition(true)
+    setTimeout(() => navigation(path), 1000)
+  }
+
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
       <img
         className={styles.backgroundImg}
         src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
         alt="plano de fundo"
+        ref={background}
+        onLoad={handleBackgroundLoad}
       />
-      <Header />
+      <Header handleRedirect={handleRedirect}/>
 
 
 
@@ -115,13 +61,13 @@ export function PronunciarOChao() {
         </div>
 
         <div className={styles.contentWrapper}>
-          {data.map((e, index) => (
-            <TextsPagination key={e.heading} data={e} isActive={page === index + 1}/>
+          {info.map((e, index) => (
+            <TextsPagination key={e.heading} data={e} isActive={page === index + 1} handleRedirect={handleRedirect}/>
           ))}
-          <TextsPaginationNav 
-            pages={data} 
+          <TextsPaginationNav  
             handleNavClick={handleNavClick} 
             activePage={page}
+            pages={info}
           />
         </div>
 

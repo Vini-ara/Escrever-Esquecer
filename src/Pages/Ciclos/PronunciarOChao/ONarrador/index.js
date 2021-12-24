@@ -1,15 +1,42 @@
+import { useEffect, useState } from "react";
+import { MdWest } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 import { Header } from "../../../../components/Header";
+import { TextsNavigation } from "../../../../components/TextsNavigation";
 
 import styles from "../../textos.module.scss";
 
 export function ONarrador() {
+  const [transition, setTransition] = useState(false); 
+
+  const navigation = useNavigate();
+
+  function handleRedirect(path) {
+    
+    setTransition(true)
+    setTimeout(() => navigation(path), 1000)
+  }
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    })
+  }, [])
+
   return (
-    <>
+    <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
       <Header />
 
       <section className={styles.wrapper}>
+
+        <div className={styles.backLink} onClick={() => handleRedirect('/pronunciar-o-chao')}>
+          <MdWest  size="3rem" />
+        </div>
+
         <h2>O narrador</h2>
         <hr/>
+
         <p>
           Walter Benjamin no seu ensaio <i>O Narrador</i> contou-nos que a arte de narrar, antes da ascensão do romance moderno 
           - mas também então nele incrustada -, diz respeito à cristalização e reformulação de uma espécie de saber 
@@ -19,6 +46,7 @@ export function ONarrador() {
           não interessa a comprovação do que se diz, já que ela está dada como pressuposto do enunciado, pelo simples 
           fato de ainda se dizer. 
         </p>
+
         <p>
           Por isso, a síntese que a narrativa carrega consigo como encadeamento de ideias e fatos – em seu 
           atravessamento de ideologias, mundos, referentes, calendários – prova que o sentido da experiência está 
@@ -26,6 +54,7 @@ export function ONarrador() {
           transmissão e pela consciência de se <i>viver aquilo que se sabe</i>, quando o ciclo então recomeça. O saber 
           abre espaço no mundo com ajuda do entendimento que se pretende, ele próprio, saber.
         </p>
+
         <p>
           O futebol também tem seus narradores, e suas origens parecem ser tão arcaicas e enraizadas no 
           corpo social quanto aqueles que Benjamin descreveu no princípio do século XX, isto é, em um mundo 
@@ -38,6 +67,7 @@ export function ONarrador() {
           ideia de que uma imagem seria uma resposta definitiva ao que quer que seja discutido ou disputado - 
           como ocorre com os defensores mais ferrenhos do árbitro de vídeo hoje.
         </p>
+
         <p>
           Daí a distância que há entre o futebol e a linguagem técnica usada para explicá-lo ou 
           comentá-lo. Todas as piadas com termos como <i>falso 9</i>, <i>pivote</i>, <i>box-to-box</i>, <i>winger</i>, <i>target man</i>, 
@@ -49,7 +79,9 @@ export function ONarrador() {
           especificidade que se logra gradativamente, tenta mascarar o hiato que há entre o mundo e sua experiência, e entre 
           essa experiência e sua partilha.
         </p>
-        <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="homem ouvindo jogo pelo radio" />
+
+        <img src="https://drive.google.com/uc?export=view&id=1fmWUxVwMg9hRUUnYBFj39UwzBnGVqSon" alt="homem ouvindo jogo pelo radio" />
+
         <p>
           Com o advento da imagem ao vivo no futebol, a narração permaneceu no estranho lugar de uma presença que diz o visível 
           - com a televisão, enfim, visível para as massas. Estamos a falar, assim, de um grau de defasagem entre sentidos. 
@@ -63,6 +95,7 @@ export function ONarrador() {
           lugar</i> diante do que é visto. Mais ainda: é o testemunho de um corpo diante de corpos: não é fortuito que o 
           narrador quase sempre precise estar presente no estádio onde ocorre o evento que quer reportar.
         </p>
+
         <p>
           No Brasil – mas também em toda América do Sul e em países como a Itália - a relação entre narração e saber 
           popular parece ainda mais marcante do que em outros lugares. Vendo-se narrações inglesas, por exemplo, 
@@ -80,6 +113,7 @@ export function ONarrador() {
           com países de modernização tardia e problemática como locais em que se vive este tipo de narração não parece 
           algo gratuito nesta história.
         </p>
+
         <p>
           Com isso chega-se a uma imagem crucial: quando se veem as sempre aflitivas tomadas de torcedores no 
           estádio com rádios colados ao ouvido vê-se, em verdade, um argumento a nosso favor: o de que as 
@@ -91,7 +125,9 @@ export function ONarrador() {
           ou odiá-los enquanto o jogo acontece sob o ritmo de sua voz. Apesar, indiferentemente e por 
           causa dela. É desta forma que o saber popular traduz-se em corpo, e vice-versa. 
         </p>
-        <img src="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9" alt="gol" />  
+
+        <img src="https://drive.google.com/uc?export=view&id=1OE_YWGdGfd30RHHH2vNE4WaCm6QkLfqm" alt="jogo de futebol" />
+
         <p>
           Por isso torna-se um tanto quanto curioso pensar - e aqui encerramos nosso conto - no fato de que 
           quase todos nossos narradores são identificáveis como portadores de vozes masculinas. Sendo a voz 
@@ -105,7 +141,10 @@ export function ONarrador() {
           em que constatamos como ele nos é imprescindível para construirmos eventos a partir de acontecimentos: 
           mas é necessário buscar outras formas de interpretar e ritmar o real, já que nessa busca continuaremos.
         </p>  
+        
       </section>
-    </>
+
+      <TextsNavigation currentCiclo="pronunciarOChao" handleRedirect={handleRedirect}/>
+    </div>
   );
 }

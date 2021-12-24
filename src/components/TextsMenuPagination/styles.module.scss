@@ -15,14 +15,19 @@
   &.activePage {
     display: grid;
     visibility: visible;
+
+    .card {
+      animation: card-animation 1s forwards; 
+    }
   }
 
   .card {
     height: 6rem;
     max-width: 20rem;
     width: fit-content;
-    display: flex;
+
     padding: 0.75rem 1.5rem;
+    display: flex;
 
     background-color: var(--background-white);
 
@@ -34,6 +39,9 @@
     cursor: pointer;
 
     transition: filter 0.5s;
+
+    transform: translateX(-25%); 
+    opacity: 0;
 
     &:hover {
       filter: brightness(1.1);
@@ -56,5 +64,13 @@
 
   .cardEven {
     justify-self: end;
+    transform: translateX(25%);
+  }
+}
+
+@keyframes card-animation {
+  to {
+    transform: translateX(0); 
+    opacity: 1; 
   }
 }
