@@ -136,6 +136,49 @@ export const data = {
       }
 
     ]
+  },
+  terOlhosParaVer: {
+    href: "ter-olhos-para-ver",
+    data: [
+      {
+        heading: '',
+        content: [
+          {
+            name: "Contra o popular",
+            href: "contra-o-popular"
+          },
+          {
+            name: "Corpo resto lixo",
+            href: "corpo-resto-lixo"
+          },
+          {
+            name: "Em narita",
+            href: "em-narita"
+          },
+          {
+            name: "Não há lado de fora",
+            href: "nao-ha-lado-de-fora"
+          },
+          {
+            name: "Não ver o já visto",
+            href: "nao-ver-o-ja-visto"
+          },
+          {
+            name: "Por uma outra nova cinefilia",
+            href: "por-uma-outra-nova-cinefilia"
+          }  
+        ]
+      },
+      {
+        heading: '',
+        content: [
+          {
+            name: "Transe e ou narrativa",
+            href: "transe-e-ou-narrativa"
+          }
+        ]
+      }
+    ]
   }
 
 }

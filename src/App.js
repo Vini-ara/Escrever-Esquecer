@@ -11,6 +11,7 @@ import { Home } from "./Pages/Home";
 
 import { Toamasina } from "./Pages/Ciclos/Toamasina";
 import { PronunciarOChao } from "./Pages/Ciclos/PronunciarOChao";
+import { TerOlhosParaVer } from "./Pages/Ciclos/TerOlhosParaVer";
 
 import { OFutebolASerEscrito } from "./Pages/Ciclos/PronunciarOChao/OFutebolASerEscrito";
 import { ONarrador } from "./Pages/Ciclos/PronunciarOChao/ONarrador";
@@ -38,6 +39,16 @@ import { DeusEGrande } from "./Pages/Ciclos/Toamasina/DeusEGrande";
 import { Isto } from "./Pages/Ciclos/Toamasina/Isto";
 import { PorQualLadoDoCorpo } from "./Pages/Ciclos/Toamasina/PorQualLadoDoCorpo";
 import { VoltaremosAEsteTopico } from "./Pages/Ciclos/Toamasina/VoltaremosAEsteTopico";
+
+
+
+import { ContraOPopular } from "./Pages/Ciclos/TerOlhosParaVer/ContraOPopular";
+import { CorpoRestoLixo } from "./Pages/Ciclos/TerOlhosParaVer/CorpoRestoLixo";
+import { EmNarita } from "./Pages/Ciclos/TerOlhosParaVer/EmNarita";
+import { NaoHaLadoDeFora } from "./Pages/Ciclos/TerOlhosParaVer/NaoHaLadoDeFora";
+import { NaoVerOJaVisto } from "./Pages/Ciclos/TerOlhosParaVer/NaoVerOJaVisto";
+import { PorUmaNovaCinefilia } from "./Pages/Ciclos/TerOlhosParaVer/PorUmaOutraNovaCinefilia";
+import { TranseEOuNarrativa } from "./Pages/Ciclos/TerOlhosParaVer/TranseEOuNarrativa";
 
 
 
@@ -78,6 +89,15 @@ function App() {
         <Route path="toamasina/isto" element={<Isto/>} />
         <Route path="toamasina/por-qual-lado-do-corpo" element={<PorQualLadoDoCorpo/>} />
         <Route path="toamasina/voltaremos-a-este-topico" element={<VoltaremosAEsteTopico/>} />
+
+        <Route path="/ter-olhos-para-ver" element={<TerOlhosParaVer/>} />
+        <Route path="/ter-olhos-para-ver/contra-o-popular" element={<ContraOPopular/>} />
+        <Route path="/ter-olhos-para-ver/corpo-resto-lixo" element={<CorpoRestoLixo/>} />
+        <Route path="/ter-olhos-para-ver/em-narita" element={<EmNarita/>} />
+        <Route path="/ter-olhos-para-ver/nao-ha-lado-de-fora" element={<NaoHaLadoDeFora/>} />
+        <Route path="/ter-olhos-para-ver/nao-ver-o-ja-visto" element={<NaoVerOJaVisto/>} />
+        <Route path="/ter-olhos-para-ver/por-uma-outra-nova-cinefilia" element={<PorUmaNovaCinefilia/>} />
+        <Route path="/ter-olhos-para-ver/transe-e-ou-narrativa" element={<TranseEOuNarrativa/>} />
 
         <Route path="sobre" element={<Sobre/>} />
       </Routes>

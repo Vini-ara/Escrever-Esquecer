@@ -55,6 +55,11 @@
 
     
     transition: background 1s;
+    
+
+    &::-webkit-scrollbar {
+      width: 10px; 
+    }
 
     h2 {
       font-size: 1.25rem;
@@ -118,8 +123,17 @@
     
     grid-row: 1 / 3; 
 
+    
+
     .cardContent {
       background: var(--background-white);
+
+      animation: enable-scroll 1ms 1s forwards, padding-change 1ms 1s forwards; 
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.404);
+        border-radius: 8px; 
+      }
     }
   }
 }
@@ -137,5 +151,17 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes enable-scroll {
+  to {
+    overflow-y: scroll;
+  }
+}
+
+@keyframes padding-change {
+  to {
+    padding: 1rem calc(1rem - 10px) 1rem 1rem; 
   }
 }

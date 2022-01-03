@@ -50,6 +50,11 @@
       font-size: 1.65rem;
       text-align: justify;
       text-indent: 1rem;
+
+      &.smaller {
+        text-indent: 0;
+        line-height: 1.75rem; 
+      }
     }
 
     p + p {

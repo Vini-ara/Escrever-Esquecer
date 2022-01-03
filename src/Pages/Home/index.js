@@ -50,7 +50,6 @@ export function Home() {
 
           <Card
             cardNumber={1}
-            onWheel={handleScroll}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
             pathTo="/pronunciar-o-chao"
             redirectFunction={handleRedirect}
@@ -68,7 +67,6 @@ export function Home() {
           <Card
             cardNumber={2}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
-            onWheel={handleScroll}
           >
             <h2>Algumas Cartas</h2>
             <p>
@@ -85,25 +83,48 @@ export function Home() {
           <Card
             cardNumber={3}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
-            onWheel={handleScroll}
+            pathTo="/ter-olhos-para-ver"
+            redirectFunction={handleRedirect}
           >
             <h2>Ter Olhos pra Ver</h2>
             <p>
-              O verso de Nelson Cavaquinho para lembrar de como a experiência do cinema é uma experiência do corpo.
-              <i>Ter olhos para ver</i> é um ciclo de textos que foram encomendados inicialmente para tratar de tópicos do cinema
-              brasileiro: mas muito além de críticas, temos aqui declarações verborrágicas de amor.
-            </p>
-            <p>
-              Nas revisões para além de seu contexto inicial, esta seção está em vias de tornar-se outra coisa.
-              Abrir-se para um discurso sobre a experiência sensível que o cinema não cessa de possibilitar.
-            </p>
-            <p>Vamos ver o que vai dar.</p>
+            <strong>Ter Olhos para Ver</strong> reúne textos escritos em 2019 a convite de um site especializado em cinema: 
+            por isso, nota-se, são textos breves e que pretendem acima de tudo funcionar como repositório 
+            de referências e de relações entre obras para um público maior. A ideia desta seção é, portanto, 
+            como na música de Nelson Cavaquinho de onde se extrai o título, realizar uma espécie de oração em 
+            prol das coisas que são vistas, de como são vistas, do próprio ato de vê-las. Melhor fala Ricardo 
+            Aleixo:
+          </p>
+          <p className={styles.smaller}>
+            que eu não seja
+            <br/>
+            insensível
+            <br/>
+            a nenhuma
+            <br/>
+            beleza
+            <br/>
+            e que nunca
+            <br/>
+            me baste
+            <br/>
+            nem toda a
+            <br/>
+            beleza  
+            <br/>
+            que existe
+            <br/>
+            no mundo
+            <br/>
+            enquanto houver 
+            <br/>
+            mundo
+          </p>
           </Card>
 
           <Card
             cardNumber={4}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
-            onWheel={handleScroll}
           >
             <h2>Um som estrangeiro</h2>
           </Card>
@@ -111,7 +132,6 @@ export function Home() {
           <Card
             cardNumber={5}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
-            onWheel={handleScroll}
           >
             <h2>O Sistema Exu-Ogum</h2>
           </Card>
@@ -119,7 +139,6 @@ export function Home() {
           <Card
             cardNumber={6}
             imgSrc="https://drive.google.com/uc?export=view&id=1gV3lXRHm44I15qcfgL7eSfx-TRxqyBod"
-            onWheel={handleScroll}
             pathTo="/toamasina"
             redirectFunction={handleRedirect}
           >
@@ -136,7 +155,6 @@ export function Home() {
           <Card
             cardNumber={7}
             imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
-            onWheel={handleScroll}
           >
             <h2>No meio-dia das coisas</h2>
             <p>
