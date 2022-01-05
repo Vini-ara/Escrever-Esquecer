@@ -273,7 +273,10 @@ export function AquiNesteCantoPerdido() {
 
         <p>sim?</p>
 
-        <p>sim sim. mas aqui neste canto perdido de mundo o que?</p>
+        <p>sim sim. mas <strong>aqui neste canto perdido de mundo o que?</strong></p>
+
+        <br/>
+        <br/>
 
         <p>
           porque se há luz no coração de tudo não deve haver vazio. não 
@@ -304,6 +307,9 @@ export function AquiNesteCantoPerdido() {
         <p>ser feliz</p>
 
         <p>nem que seja apenas por saber</p>
+
+        <br/>
+        <br/>
 
         <p>andamos para fora do fim de tarde. quem acompanha a quem meu amigo?</p>
 
@@ -510,7 +516,12 @@ export function AquiNesteCantoPerdido() {
 
         <p>e vencer?</p>
 
-        <p>contra ninguém.</p>
+        <p>e vencer.</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>
           e somos nós mesmos também as peças. o mundo foi transformado em um jogo inesgotável. 
@@ -539,31 +550,96 @@ export function AquiNesteCantoPerdido() {
 
         <p>se eu pudesse me esqueceria de todo o futuro do passado.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p className={styles.end}><em>[27 km]</em></p>
 
         <p>É impossível ser justo neste continente</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>ou se erra para um ou se erra para outro. nunca se acerta. o continente é imenso as pessoas se descentram a justiça é cega deus é cego a luz aqui a nos cegar.</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>escolher a verdade é mentir de algum jeito. diante de tamanho despautério.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>e mentir é ainda mais canalha do que isso. é se esconder do que pode ser ainda possível.</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>o continente é imenso.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>inabitável em palavras.</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>os discursos nos abandonaram aqui no meio do real. de mãos vazias. de olhos secos.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>mas não há lado de fora nem lado de dentro. </p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>tudo é uma só coisa sem nome sem lado sem fronteira.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>eu creio nisso como quem se lembra de um avô falecido</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>que a distância repõe em sonho.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>o continente é perplexo.</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>pois há incontáveis pessoas perigos pactos périplos pelejas perímetros páginas palcos poços possíveis passados percursos partidas paguros passagens presenças</p>
 
@@ -573,11 +649,26 @@ export function AquiNesteCantoPerdido() {
 
         <p>justiça está em não negar que há sorte.</p>
 
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
         <p>justiça está em saber errar.</p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p>ao menos nisso triunfamos sobre deus.</p>
 
         <p className={styles.end}><em>[29 km]</em></p>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
 
         <p className={styles.end}><em>[30 km]</em></p>
 

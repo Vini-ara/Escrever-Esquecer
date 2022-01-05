@@ -8,7 +8,7 @@ import { MdWest } from "react-icons/md";
 
 import styles from "../../textos.module.scss";
 
-export function VoltaremosAEsteTopico() {
+export function RetornaremosAEsteTopico() {
   const [transition, setTransition] = useState(false); 
 
   const navigation = useNavigate();
@@ -38,7 +38,7 @@ export function VoltaremosAEsteTopico() {
           <MdWest  size="3rem" />
         </div>
 
-        <h2>Voltaremos a este tópico no capítulo XVII</h2>
+        <h2>retornemos a este tópico no capítulo XVII</h2>
         <hr/>
         <p>
           <strong>retornaremos a este tópico no capítulo XVII</strong>, por ora me bastando um exemplo simples, mas que pode nos 

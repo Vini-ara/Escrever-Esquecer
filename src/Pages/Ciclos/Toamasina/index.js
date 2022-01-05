@@ -64,11 +64,11 @@ export function Toamasina() {
           {info.map((e, index) => (
             <TextsPagination key={e.heading} data={e} isActive={page === index + 1} handleRedirect={handleRedirect} />
           ))}
-          <TextsPaginationNav
+           { info.length > 1 && <TextsPaginationNav
             handleNavClick={handleNavClick}
             activePage={page}
             pages={info}
-          />
+          />}
         </div>
 
       </section>

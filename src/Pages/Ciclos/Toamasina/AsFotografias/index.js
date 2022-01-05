@@ -54,7 +54,7 @@ export function AsFotografias() {
         </p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -67,7 +67,7 @@ export function AsFotografias() {
         </p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -113,7 +113,7 @@ export function AsFotografias() {
         <p>Eu odiaria que publicassem os nossos diários</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Diz-se que ver é unicamente sobre saber ver. Hoje concordo com isso como concordo com o dia:</p>
@@ -121,19 +121,19 @@ export function AsFotografias() {
         <p>&nbsp;&nbsp;&nbsp;diante do visto.</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Diz-se – também – que ver é unicamente sobre saber ser visto. Se alguém me lê, eu devo concordar com isso.</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p><em>Exposto o pressuposto, passaria a narrar o ocorrido.</em></p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -142,7 +142,7 @@ export function AsFotografias() {
         </p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -170,7 +170,7 @@ export function AsFotografias() {
         <p>Mas outra vez passo a narrar para mim e, por isso, deixo então de narrar.</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Beatriz, são minhas as duas mãos que novamente constatam.</p>
@@ -184,7 +184,7 @@ export function AsFotografias() {
         <p>Com o que nos é alheio.</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Mas nisso eu seria injusto uma vez mais. E então recomeçaria.</p>
@@ -201,7 +201,7 @@ export function AsFotografias() {
         <p>Tampouco verdade havia para ser anunciada.</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -220,7 +220,7 @@ export function AsFotografias() {
         <p className={styles.end}>Tive, então, que recomeçar</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Eu estive ali muitos anos depois dos que não se lembram. Dos que sequer poderiam se lembrar.</p>
@@ -244,7 +244,7 @@ export function AsFotografias() {
         <p>O reino da palavra, onde vige a única lei sorridente.</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Os que não se lembram evidentemente não fotografaram. Ou contaram. Ou mentiram.</p>
@@ -254,7 +254,7 @@ export function AsFotografias() {
         <p>Então, tentaria recomeçar</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -270,7 +270,7 @@ export function AsFotografias() {
         <p><em>Como descrevi a ela, que ali não estava, e nunca esteve, mesmo se estivesse.</em></p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>
@@ -296,7 +296,7 @@ export function AsFotografias() {
         </em></p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p><em>Em silêncio? Como se traça a distância entre o lido e o livro?</em></p>
@@ -306,7 +306,7 @@ export function AsFotografias() {
         <p>Se escrever é ser como deus, por onde deus, num dia talvez de outono, teria começado?</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p><em>Escrever.</em></p>
@@ -406,7 +406,7 @@ export function AsFotografias() {
         <p><em>E então ter escrito.</em></p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>À Bahia.</p>
@@ -420,7 +420,7 @@ export function AsFotografias() {
         <p>A voz de Beatriz a gravemente dissipar que</p>
 
         <p className={styles.center}>
-          *
+          <strong>*</strong>
         </p>
 
         <p>Acho engraçado uma coisa em tuas fotos</p>

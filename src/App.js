@@ -12,6 +12,8 @@ import { Home } from "./Pages/Home";
 import { Toamasina } from "./Pages/Ciclos/Toamasina";
 import { PronunciarOChao } from "./Pages/Ciclos/PronunciarOChao";
 import { TerOlhosParaVer } from "./Pages/Ciclos/TerOlhosParaVer";
+import { UmSomEstrangeiro } from "./Pages/Ciclos/UmSomEstrangeiro";
+
 
 import { OFutebolASerEscrito } from "./Pages/Ciclos/PronunciarOChao/OFutebolASerEscrito";
 import { ONarrador } from "./Pages/Ciclos/PronunciarOChao/ONarrador";
@@ -31,6 +33,7 @@ import { AliancasDemoniacas } from "./Pages/Ciclos/PronunciarOChao/AliancasDemon
 import { OsDeusesDoFutebol } from "./Pages/Ciclos/PronunciarOChao/OsDeusesDoFutebol";
 
 
+
 import { AquiNesteCantoPerdido } from "./Pages/Ciclos/Toamasina/AquiNesteCantoPerdido";
 import { ArvoreGenealogica } from "./Pages/Ciclos/Toamasina/ArvoreGenealogica";
 import { AsFotografias } from "./Pages/Ciclos/Toamasina/AsFotografias";
@@ -38,7 +41,7 @@ import { DaAbstracao } from "./Pages/Ciclos/Toamasina/DaAbstracao";
 import { DeusEGrande } from "./Pages/Ciclos/Toamasina/DeusEGrande";
 import { Isto } from "./Pages/Ciclos/Toamasina/Isto";
 import { PorQualLadoDoCorpo } from "./Pages/Ciclos/Toamasina/PorQualLadoDoCorpo";
-import { VoltaremosAEsteTopico } from "./Pages/Ciclos/Toamasina/VoltaremosAEsteTopico";
+import { RetornaremosAEsteTopico } from "./Pages/Ciclos/Toamasina/RetornaremosAEsteTopico";
 
 
 
@@ -50,6 +53,10 @@ import { NaoVerOJaVisto } from "./Pages/Ciclos/TerOlhosParaVer/NaoVerOJaVisto";
 import { PorUmaNovaCinefilia } from "./Pages/Ciclos/TerOlhosParaVer/PorUmaOutraNovaCinefilia";
 import { TranseEOuNarrativa } from "./Pages/Ciclos/TerOlhosParaVer/TranseEOuNarrativa";
 
+
+
+import { AQuietudeEQuaseUmSonho } from "./Pages/Ciclos/UmSomEstrangeiro/AQuietudeEQuaseUmSonho";
+import { Rua } from "./Pages/Ciclos/UmSomEstrangeiro/Rua";
 
 
 // Define as rotas da aplicação
@@ -88,7 +95,7 @@ function App() {
         <Route path="toamasina/deus-e-grande-a-baia-e-grande" element={<DeusEGrande/>} />
         <Route path="toamasina/isto" element={<Isto/>} />
         <Route path="toamasina/por-qual-lado-do-corpo" element={<PorQualLadoDoCorpo/>} />
-        <Route path="toamasina/voltaremos-a-este-topico" element={<VoltaremosAEsteTopico/>} />
+        <Route path="toamasina/retornaremos-a-este-topico" element={<RetornaremosAEsteTopico/>} />
 
         <Route path="/ter-olhos-para-ver" element={<TerOlhosParaVer/>} />
         <Route path="/ter-olhos-para-ver/contra-o-popular" element={<ContraOPopular/>} />
@@ -98,6 +105,10 @@ function App() {
         <Route path="/ter-olhos-para-ver/nao-ver-o-ja-visto" element={<NaoVerOJaVisto/>} />
         <Route path="/ter-olhos-para-ver/por-uma-outra-nova-cinefilia" element={<PorUmaNovaCinefilia/>} />
         <Route path="/ter-olhos-para-ver/transe-e-ou-narrativa" element={<TranseEOuNarrativa/>} />
+
+        <Route path="/um-som-estrangeiro" element={<UmSomEstrangeiro/>} />
+        <Route path="/um-som-estrangeiro/a-quietude-e-quase-um-sonho" element={<AQuietudeEQuaseUmSonho/>} />
+        <Route path="/um-som-estrangeiro/rua" element={<Rua/>} />
 
         <Route path="sobre" element={<Sobre/>} />
       </Routes>

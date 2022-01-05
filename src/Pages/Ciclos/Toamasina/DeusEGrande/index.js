@@ -38,7 +38,7 @@ export function DeusEGrande() {
           <MdWest  size="3rem" />
         </div>
 
-        <h2>Deus é grande a baía é grande</h2>
+        <h2>deus é grande a baía é grande</h2>
         <hr/>
 
         <p>

@@ -49,6 +49,8 @@
 
     font-size: 2rem; 
 
+    align-items: center;
+
     button {
       margin-left: 1rem;
       border: none; 
@@ -60,8 +62,20 @@
       cursor: pointer;
     }
 
+    .about {
+      border-radius: 2rem;
+
+      transition: all .3s; 
+
+      &:hover {
+        background-color: var(--background-white);
+        color: var(--red-500);
+        filter: brightness(0.9) 
+      }
+    }
+
     .random {
-      background-color: var(--red-500);
+      background-color: var(--red-300);
       border-radius: 2rem;
       
       text-align: center;
@@ -71,6 +85,36 @@
       &:hover {
         filter: brightness(.9); 
       }
+    }
+
+    .menuIcon {
+      margin-left: 1rem; 
+
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .random {
+    display: none;
+    visibility: hidden;
+  }
+
+  .header {
+    justify-content: center;
+
+    .menuIcon {
+      position: absolute; 
+
+      right: 1rem; 
     }
   }
 }

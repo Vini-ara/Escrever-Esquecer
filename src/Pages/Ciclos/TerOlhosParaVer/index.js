@@ -39,7 +39,7 @@ export function TerOlhosParaVer() {
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
       <img
         className={styles.backgroundImg}
-        src="https://drive.google.com/uc?export=view&id=1gV3lXRHm44I15qcfgL7eSfx-TRxqyBod"
+        src="https://drive.google.com/uc?export=view&id=1lrYAmcuG_zaYX-nOUZEZHdn-pu2LWx43"
         alt="plano de fundo"
         ref={background}
         onLoad={handleBackgroundLoad}
@@ -90,11 +90,11 @@ export function TerOlhosParaVer() {
           {info.map((e, index) => (
             <TextsPagination key={e.heading} data={e} isActive={page === index + 1} handleRedirect={handleRedirect} />
           ))}
-          <TextsPaginationNav
+           { info.length > 1 && <TextsPaginationNav
             handleNavClick={handleNavClick}
             activePage={page}
             pages={info}
-          />
+          />}
         </div>
 
       </section>

@@ -1,6 +1,7 @@
 
 export const data = {
   pronunciarOChao:  {
+    name: "Pronunciar o chão",
     href: "pronunciar-o-chao",
     data: [
       {
@@ -90,6 +91,7 @@ export const data = {
     ]
   },
   toamasina: {
+    name: "Toamasina",
     href: "toamasina", 
     data: [
       {
@@ -112,11 +114,11 @@ export const data = {
             href: "aqui-neste-canto-perdido"
           },
           {
-            name: "Deus é grande a baia é grande",
+            name: "deus é grande a baia é grande",
             href: "deus-e-grande-a-baia-e-grande"
           },
           {
-            name: "Voltaremos a este tópico no capítulo XVII",
+            name: "retornaremos a este tópico no capítulo XVII",
             href: "voltaremos-a-este-topico"
           },
         ]
@@ -138,6 +140,7 @@ export const data = {
     ]
   },
   terOlhosParaVer: {
+    name: "Ter olhos para ver",
     href: "ter-olhos-para-ver",
     data: [
       {
@@ -179,6 +182,50 @@ export const data = {
         ]
       }
     ]
+  },
+  umSomEstrangeiro: {
+    name: "Um som estrangeiro",
+    href: "um-som-estrangeiro",
+    data: [
+      {
+        heading: "",
+        content: [
+          {
+            name: "A quietude é quase um sonho",
+            href: "a-quietude-e-quase-um-sonho"
+          },
+          {
+            name: "Rua",
+            href: "rua"
+          },
+          {
+            name: "Ruído, estrutura",
+            href: "ruido-estrutura"
+          },
+          {
+            name: "Trazemos bolacha na mochila",
+            href: "trazemos-bolacha-na-mochila"
+          }
+        ]
+      }
+    ]
+  },
+  noMeioDiaDasCoisas: {
+    name: "No meio-dia das coisas",
+    href: "no-meio-dia-das-coisas",
+    data: [{
+      heading: "",
+      content: [
+        {
+          name: "I.",
+          href: "I",
+        },
+        {
+          name: "II. Vida e Obra de J. Ramos Santos",
+          href: "II-vida-e-obra-de-j-Ramos-Santos"
+        }
+      ]
+    }
+    ]
   }
-
 }

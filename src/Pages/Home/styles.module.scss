@@ -71,6 +71,10 @@
 
   scrollbar-color: rgba(0, 0, 0, 0.404) transparent;
   scrollbar-width: 10px;
+
+  .end {
+    text-align: end !important; 
+  }
 }
 
 @keyframes card-fade-in {

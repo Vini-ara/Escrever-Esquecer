@@ -13,6 +13,8 @@ export function Home() {
 
   const CardContainer = useRef();
 
+  
+
   const navigation = useNavigate();
 
   function handleScroll(e) {
@@ -50,7 +52,7 @@ export function Home() {
 
           <Card
             cardNumber={1}
-            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            imgSrc="https://drive.google.com/uc?export=view&id=1q8UYC2RXoiqb05OedJ5O0Bbzyj-dN_O4"
             pathTo="/pronunciar-o-chao"
             redirectFunction={handleRedirect}
           >
@@ -66,7 +68,7 @@ export function Home() {
 
           <Card
             cardNumber={2}
-            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            imgSrc="https://drive.google.com/uc?export=view&id=10g03hR0k6bPiM8Q32ppdZKFe2A3K70mU"
           >
             <h2>Algumas Cartas</h2>
             <p>
@@ -82,7 +84,7 @@ export function Home() {
 
           <Card
             cardNumber={3}
-            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            imgSrc="https://drive.google.com/uc?export=view&id=1lrYAmcuG_zaYX-nOUZEZHdn-pu2LWx43"
             pathTo="/ter-olhos-para-ver"
             redirectFunction={handleRedirect}
           >
@@ -124,9 +126,17 @@ export function Home() {
 
           <Card
             cardNumber={4}
-            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            imgSrc="https://drive.google.com/uc?export=view&id=19uSXHFkmp443JoNUmXehLZzbZ8fbYoVT"
+            pathTo="/um-som-estrangeiro"
+            redirectFunction={handleRedirect}
           >
             <h2>Um som estrangeiro</h2>
+            <p>
+              <strong>Um som estrangeiro</strong> é um exercício livre de construção crítica sobre algumas genealogias musicais. Longe da prática especializada, 
+              estes textos pretendem pensar a música como uma prática puramente sensorial – portanto, política e ética: saída que dá conta da 
+              limitação de compreensão técnica e da inserção destas palavras em contexto. Mote-e-glosa: a música também depõe para a maneira 
+              como os corpos se fabricam e se deslocam, ritmicamente, no mundo.
+            </p>
           </Card>
 
           <Card
@@ -154,16 +164,27 @@ export function Home() {
 
           <Card
             cardNumber={7}
-            imgSrc="https://drive.google.com/uc?export=view&id=1pHxD2H5dGk5KBjBQMMNAUG2wSaLnrjf9"
+            imgSrc="https://drive.google.com/uc?export=view&id=1VwhNL_hwn_tsMPr_QwctqEA2tOnWhQ4M"
           >
             <h2>No meio-dia das coisas</h2>
             <p>
-              Aqui está um ciclo estético ainda vivente, atualizado, falível.
-              Esta seção diz respeito a textos novos, que giram em torno das formas de manifestação de objetos,
-              na relação tensa entre o íntegro e o falso, o puro e o impuro, a unidade e o conjunto.
-              Daquilo que faz com que uma coisa não sejam duas. E do que se mostra como invenção da visão pelo ponto de vista.
+              No meio-dia das Coisas foi criado a partir de gravações feitas na cidade de Candeias, Bahia, em 2014. Tais registros 
+              foram inicialmente destinados a um trabalho de análise linguística de seus enunciadores, tornando-se, ali, corpus. Com 
+              o tempo, as palavras se impuseram às intenções da pesquisa – que em si já era suficientemente desinteressada.
             </p>
-            <p>Está claro que estamos na dobra da palavra.</p>
+            <p> 
+              Talvez alguns argumentem que não há justiça em fazer das palavras das pessoas algo tão diverso e alheio a suas intenções. 
+              O problema é que o próprio texto quer argumentar a este favor, não restando então dúvida sobre o veredito final: falar é defender, 
+              com toda a razão, as mais torpes injustiças.
+            </p>
+            <p>
+              Por isso, quando ser injusto torna-se o modelo das ações e do modo de vida daqueles que pautam os destinos dos debates neste país, 
+              a questão parece ser requisitar para as palavras sua própria injustiça essencial. Ela é o oposto do cinismo, ferramenta inútil de 
+              quem pretende disfarçar a existência do mundo, do corpo, do nada.
+            </p>
+            <p className={styles.end}>
+              [2021]
+            </p>
           </Card>
         </div>
       )}
