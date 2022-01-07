@@ -1,11 +1,11 @@
-import { useState } from "react";
+//import { useState } from "react";
 
-import { Loading } from "../Loading";
+//import { Loading } from "../Loading";
 
 import styles from "./styles.module.scss";
 
 export function Card({ cardNumber, imgSrc, children, pathTo, redirectFunction }) {
-  const [isLoading, setIsLoading] = useState(true)
+  //const [isLoading, setIsLoading] = useState(true)
 
   return (
     <div className={`${styles.card} ${styles[`card${cardNumber}`]}`} onClick={() => redirectFunction(pathTo)}> 

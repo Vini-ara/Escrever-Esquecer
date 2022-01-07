@@ -17,15 +17,15 @@ export function Home() {
 
   const navigation = useNavigate();
 
-  function handleScroll(e) {
-    const target = CardContainer.current
-    const scrollPos = target.scrollLeft + e.deltaY / 2.5
+  // function handleScroll(e) {
+  //   const target = CardContainer.current
+  //   const scrollPos = target.scrollLeft + e.deltaY / 2.5
 
-    target.scroll({
-      top: 0,
-      left: scrollPos
-    })
-  }
+  //   target.scroll({
+  //     top: 0,
+  //     left: scrollPos
+  //   })
+  // }
 
   function handleRedirect(path) {
 
