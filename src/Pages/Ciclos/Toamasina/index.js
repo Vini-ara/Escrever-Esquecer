@@ -37,13 +37,13 @@ export function Toamasina() {
 
   return (
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
-      <img
+      {/* <img
         className={styles.backgroundImg}
         src="https://drive.google.com/uc?export=view&id=1gV3lXRHm44I15qcfgL7eSfx-TRxqyBod"
         alt="plano de fundo"
         ref={background}
         onLoad={handleBackgroundLoad}
-      />
+      /> */}
       <Header handleRedirect={handleRedirect} />
 
 

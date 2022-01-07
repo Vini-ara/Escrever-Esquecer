@@ -1,7 +1,7 @@
 .card {
-  width: 22.5rem; 
-  height: 22.5rem; 
-  min-height: 22.5rem;
+  width: fit-content; 
+  height: fit-content; 
+  
 
   grid-row: 1; 
 
@@ -11,14 +11,16 @@
 
   border-radius: 3rem;
   overflow: hidden;
-  box-shadow: 0 .5rem 20px rgba(0, 0, 0, 0.301); 
+  //box-shadow: 0 .5rem 20px rgba(0, 0, 0, 0.301); 
 
-  background: var(--background-white);
+  background: transparent;
 
   transition: all 1s;
 
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
+
+  position: absolute; 
 
 
   .cardImg {
@@ -54,16 +56,17 @@
     padding: 1rem; 
 
     
-    transition: background 1s;
+    transition: all .6s;
     
 
-    &::-webkit-scrollbar {
-      width: 10px; 
-    }
+    // &::-webkit-scrollbar {
+    //   width: 10px; 
+    // }
 
     h2 {
-      font-size: 1.25rem;
-      padding-left: 1rem;
+      font-size: 2.25rem;
+      color: var(--red-300);
+      font-weight: bold;
     }
 
     p {
@@ -75,65 +78,66 @@
   }
 
   &.card1 {
-    transform: translateY(-50%);
-    animation: card-fade-in 1s forwards;
+    top: 0%; left: 50%;
+    transform: translateX(-50%);
+    //animation: card-fade-in 1s forwards;
   }
 
   &.card2 {
-    grid-area: 2 / 2 / 2 / 2; 
-    align-self: end;
-    transform: translateY(50%);
-    animation: card-fade-in 1s .25s forwards;
+    //grid-area: 2 / 2 / 2 / 2; 
+   // align-self: end;
+    top: 17%; left: 15%; 
+    //animation: card-fade-in 1s .25s forwards;
   }
 
   &.card3 {
-    grid-area: 1 / 3 / 1 / 3;
-    transform: translateY(-50%);
-    animation: card-fade-in 1s .5s forwards;
+    //grid-area: 1 / 3 / 1 / 3;
+    top: 30%; right: 20%;
+   // animation: card-fade-in 1s .5s forwards;
   }
 
   &.card4 {
-    grid-area: 2 / 4 / 2 / 4;
-    align-self: end;
-    transform: translateY(50%);
-    animation: card-fade-in 1s .75s forwards;
+    //grid-area: 2 / 4 / 2 / 4;
+    //align-self: end;
+    top: 51%; left: 1%;  
+    //animation: card-fade-in 1s .75s forwards;
   }
 
   &.card5 {
-    grid-area: 1 / 5 / 1 / 5;
-    transform: translateY(50%);
-    animation: card-fade-in 1s 1s forwards;
+    //grid-area: 1 / 5 / 1 / 5;
+    top: 67%; right: 8%; 
+    //animation: card-fade-in 1s 1s forwards;
   }
 
   &.card6 {
-    grid-area: 2 / 6 / 2 / 6;
-    align-self: end;
-    transform: translateY(-50%);
-    animation: card-fade-in 1s 1.25s forwards;
+    //grid-area: 2 / 6 / 2 / 6;
+    //align-self: end;
+    top: 80%; left: 28%; 
+    //animation: card-fade-in 1s 1.25s forwards;
   }
 
   &.card7 {
-    grid-area: 1 / 7 / 1 / 7;
-    transform: translateY(50%);
-    animation: card-fade-in 1s 1.5s forwards;
+   // grid-area: 1 / 7 / 1 / 7;
+    top: 91%; right: 30%; 
+    //animation: card-fade-in 1s 1.5s forwards;
   }
 
   &:hover {
-    height: 100%; 
+    // height: 100%; 
     
-    grid-row: 1 / 3; 
+    // grid-row: 1 / 3; 
 
     
 
     .cardContent {
-      background: var(--background-white);
+      
 
-      animation: enable-scroll 1ms 1s forwards, padding-change 1ms 1s forwards; 
+      //animation: enable-scroll 1ms 1s forwards, padding-change 1ms 1s forwards; 
 
-      &::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.404);
-        border-radius: 8px; 
-      }
+      // &::-webkit-scrollbar-thumb {
+      //   background-color: rgba(0, 0, 0, 0.404);
+      //   border-radius: 8px; 
+      // }
     }
   }
 }

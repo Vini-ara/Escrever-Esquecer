@@ -42,23 +42,18 @@ export function Rua() {
         <hr/>
 
         <p>
-          As dificuldades enfrentadas por uma análise estética do rap tão justificáveis quanto pouco compreendidas. Objeto em disputa, a música que expandiu os limites da cultura hip-hop pelo mundo traz consigo um estatuto que precisaria ser explicitamente discutido, como questão de saída, para qualquer projeto crítico que se pretendesse poroso àquilo que está se debruçando: portanto, que se pretendesse dialético. A questão será, em resumo, pensar na própria materialidade ou forma de existência do rap como objeto <em>ao mesmo tempo</em> estético e não-estético, na complexidade intrínseca a esta formação, como se tentará aqui sugerir a partir do seu solo de origem e circulação.
+          As dificuldades enfrentadas por uma análise estética do rap tão justificáveis quanto pouco compreendidas. Objeto em disputa, a 
+          música que expandiu os limites da cultura hip-hop pelo mundo traz consigo um estatuto que precisaria ser explicitamente discutido, 
+          como questão de saída, para qualquer projeto crítico que se pretendesse poroso àquilo que está se debruçando: portanto, que se 
+          pretendesse dialético. A questão será, em resumo, pensar na própria materialidade ou forma de existência do rap como 
+          objeto <em>ao mesmo tempo</em> estético e não-estético, na complexidade intrínseca a esta formação, como se tentará aqui sugerir 
+          a partir do seu solo de origem e circulação.
         </p>
 
         <p>
-          Uma complexidade que poderíamos chamar, inclusive, de ontológica, pois age na maneira em que esses enunciados são entendidos e em quais efeitos podem suscitar.
+          Uma complexidade que poderíamos chamar, inclusive, de ontológica, pois age na maneira em que esses enunciados são 
+          entendidos e em quais efeitos podem suscitar.
         </p> 
-
-        <p>
-          Olhando-se para o rock brasileiro dos anos 1980, nota-se de fato uma tentativa de assumir um tom de crítica e denúncia da realidade social 
-          imediata como lastro discursivo: no entanto, para longe do viés periférico do nosso punk tardio em As Mercenárias, Cólera ou Inocentes, é 
-          evidente que o tom das denúncias dos Titãs ou dos Paralamas do Sucesso parece ecoar muito mais um filão filantrópico do que algo que os imigrantes 
-          jamaicanos tenham feito na década anterior na Inglaterra. Talvez o desacerto de tom aí se deva principalmente às pressões pela construção de um 
-          mercado fonográfico mais encorpado e voltado para a classe média - vide o Rock in Rio e os nossos Cazuzas - que não conseguia admitir determinadas 
-          palavras, discursos, alturas, sonoridades por ora. Por isso, as respostas de maior amplitude e profundidade parecem estar muito longe destes 
-          lugares em que o mercado assentava os limites da contestação e da ira(!) a ser externalizada - sem haver nisso nenhuma celebração do "impopular" 
-          ou do "exótico", mas o reconhecimento da falsidade de constituição deste "popular" que se ergue às pressas em especiais de domingo.
-        </p>
 
         <p>
           O rap é um estilo musical que carrega consigo uma ética que se pretende distinta à da música comercial, algo que passa pela função social 
@@ -115,7 +110,12 @@ export function Rua() {
         </p>
 
         <p>
-          E nesta relação vige o grande desafio que o rap oferece à crítica que se propõe a tentar compreender tanto seus objetos particulares quanto sua lógica partilhada: sua inserção em circuitos estéticos e ideológicos nunca será completa, porque a <em>rua</em> existe como resto, como topologia da ética, desdobrando-a em forma e em conteúdo social. Pode-se escrever uma história do rap a partir da história do Brasil? Sem dúvidas. Mas isso implicaria, no negativo, escrever a história do Brasil a partir da história do rap. O nó de virada de cada frase em que a história se faz contra-história é, justamente, a <em>rua</em>: este local tão caro às escritas de histórias culturais e sociais como a do candomblé e do hip-hop: histórias não à toa oriundas de uma mesma parte do mundo.
+          E nesta relação vige o grande desafio que o rap oferece à crítica que se propõe a tentar compreender tanto seus objetos particulares 
+          quanto sua lógica partilhada: sua inserção em circuitos estéticos e ideológicos nunca será completa, porque a <em>rua</em> existe como 
+          resto, como topologia da ética, desdobrando-a em forma e em conteúdo social. Pode-se escrever uma história do rap a partir da história 
+          do Brasil? Sem dúvidas. Mas isso implicaria, no negativo, escrever a história do Brasil a partir da história do rap. O nó de virada de 
+          cada frase em que a história se faz contra-história é, justamente, a <em>rua</em>: este local tão caro às escritas de histórias culturais 
+          e sociais como a do candomblé e do hip-hop: histórias não à toa oriundas de uma mesma parte do mundo.
         </p>
 
         <p>

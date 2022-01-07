@@ -10,14 +10,14 @@ export function Card({ cardNumber, imgSrc, children, pathTo, redirectFunction })
   return (
     <div className={`${styles.card} ${styles[`card${cardNumber}`]}`} onClick={() => redirectFunction(pathTo)}> 
 
-      <img
+      {/* <img
         className={`${styles.cardImg} ${!isLoading ? styles.imgActive : ''}`}
         src={imgSrc}
         alt="card"
         onLoad={() => setIsLoading(false)}
-      />
+      /> */}
 
-      {isLoading && <Loading className={styles.loading} />}
+      {/* {isLoading && <Loading className={styles.loading} />} */}
 
       <div className={styles.cardContent}>
         {children}

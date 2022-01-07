@@ -57,6 +57,8 @@ import { TranseEOuNarrativa } from "./Pages/Ciclos/TerOlhosParaVer/TranseEOuNarr
 
 import { AQuietudeEQuaseUmSonho } from "./Pages/Ciclos/UmSomEstrangeiro/AQuietudeEQuaseUmSonho";
 import { Rua } from "./Pages/Ciclos/UmSomEstrangeiro/Rua";
+import { RuidoEstrutura } from "./Pages/Ciclos/UmSomEstrangeiro/RuidoEstrutura";
+import { TrazemosBolachaNaMochila } from "./Pages/Ciclos/UmSomEstrangeiro/TrazemosBolachaNaMochila";
 
 
 // Define as rotas da aplicação
@@ -109,6 +111,8 @@ function App() {
         <Route path="/um-som-estrangeiro" element={<UmSomEstrangeiro/>} />
         <Route path="/um-som-estrangeiro/a-quietude-e-quase-um-sonho" element={<AQuietudeEQuaseUmSonho/>} />
         <Route path="/um-som-estrangeiro/rua" element={<Rua/>} />
+        <Route path="/um-som-estrangeiro/ruido-estrutura" element={<RuidoEstrutura/>} />
+        <Route path="/um-som-estrangeiro/trazemos-bolacha-na-mochila" element={<TrazemosBolachaNaMochila/>} />
 
         <Route path="sobre" element={<Sobre/>} />
       </Routes>
