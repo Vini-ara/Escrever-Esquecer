@@ -45,7 +45,7 @@ console.log(pdfContainer.current)
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
       <img
         className={styles.backgroundImg}
-        src="https://drive.google.com/uc?export=view&id=1VwhNL_hwn_tsMPr_QwctqEA2tOnWhQ4M"
+        src="https://drive.google.com/uc?export=view&id=1a_UkV7qhIVfdTpyDhOHoJGAC69BS3UPl"
         alt="plano de fundo"
         ref={background}
         onLoad={handleBackgroundLoad}
