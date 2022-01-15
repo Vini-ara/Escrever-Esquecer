@@ -1,15 +1,30 @@
 import { useNavigate } from "react-router-dom";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+
+import { MdClose } from "react-icons/md";
+import { useWindowWidth } from "../../hooks/useWindowWidth"
 
 import styles from "./styles.module.scss";
 
 import { data } from "../../data/data"
 
 export function MenuModal({handleRedirect, isActive, handleModalState}) {
+  const [hasLevemeButton, setHasLevemeButton] = useState(false);
+
 
   const navigation = useNavigate()
 
   const modalContent = useRef();
+
+  const width = useWindowWidth();
+
+  useEffect(() => {
+    if(width <= 800) {
+      setHasLevemeButton(true);
+    } else {
+      setHasLevemeButton(false);
+    }
+  }, [width])
 
   function Redirect(route) {
     console.log([window.location.pathname, route])
@@ -33,12 +48,12 @@ export function MenuModal({handleRedirect, isActive, handleModalState}) {
     }
     return
   }
-
-  console.log(Object.keys(data))
   
   return (
     <div className={`${styles.modalOverlay} ${isActive ? styles.modalActive : ''}`} onClick={handleOverlayClick}>
       <div className={styles.modalContent} ref={modalContent}>
+        <MdClose className={styles.modalClose} onClick={handleModalState}/>
+
         <h2>Menu de navegação</h2>
 
         <ul>
@@ -57,6 +72,8 @@ export function MenuModal({handleRedirect, isActive, handleModalState}) {
               ))}
             </ul>
           </li>
+
+          {hasLevemeButton && <li><button onClick={() => Redirect("/sobre")}>Leve-me a qualquer lugar</button></li> }
         </ul>
       </div>
     </div>

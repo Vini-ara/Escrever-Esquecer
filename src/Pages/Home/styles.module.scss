@@ -51,36 +51,64 @@
   height: 80vh; 
   width: 100vw; 
 
-  //padding: 5rem 3rem 5rem 12.5rem;
+  .card {
+    position: absolute;
 
-  // grid-template-columns: repeat(7, 25rem);
-  // grid-template-rows: repeat(2, 1fr);
-  // column-gap: 3rem;
+    border: none; 
+    background-color: transparent;
+    cursor: pointer;
 
-  //overflow: hidden;
+    h2 {
+      font-size: 2.25rem;
+      color: var(--red-300);
 
-  &::-webkit-scrollbar {
-    height: 10px;
+      background-color: rgb(214, 215, 210, 0.6);
+      padding: 0 .75rem; 
+
+      border-radius: 2.5rem;
+
+      transition: all .3s; 
+      &:hover {
+        filter: brightness(1.1);
+      }
+    }
+
+    &.card1 {
+      top: 0%; left: 50%;
+      transform: translateX(-50%);
+      animation: opacity-in 3s ease forwards;
+    }
+    &.card2 {
+      top: 17%; left: 15%; 
+      animation: opacity-in 3s ease forwards;
+    }
+  
+    &.card3 {
+      top: 30%; right: 20%;
+      animation: opacity-in 3s ease forwards;
+    }
+  
+    &.card4 { 
+      top: 51%; left: 1%;  
+      animation: opacity-in 3s ease forwards;
+    }
+  
+    &.card5 {
+      top: 67%; right: 8%; 
+      animation: opacity-in 3s ease forwards;
+    }
+  
+    &.card6 {
+      top: 80%; left: 28%; 
+      animation: opacity-in 3s ease forwards;
+    }
+  
+    &.card7 {
+      top: 91%; right: 22%; 
+      animation: opacity-in 3s ease forwards;
+    }
   }
-
-  &::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.404); 
-    border-radius: 8px;
-  }
-
-  scrollbar-color: rgba(0, 0, 0, 0.404) transparent;
-  scrollbar-width: 10px;
-
-  .end {
-    text-align: end !important; 
-  }
-}
-
-@keyframes card-fade-in {
-  to {
-    opacity: 1; 
-    transform: translateY(0);
-  }
+  
 }
 
 @keyframes opacity-in {

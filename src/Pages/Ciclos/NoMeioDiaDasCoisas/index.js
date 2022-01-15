@@ -9,7 +9,7 @@ import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
 
 
-export function PronunciarOChao() {
+export function NoMeioDiaDasCoisas() {
   const [page, setPage] = useState(1);
   const [transition, setTransition] = useState(false); 
 
@@ -17,7 +17,7 @@ export function PronunciarOChao() {
 
   const background = useRef();
 
-  const info = data["pronunciarOChao"].data
+  const info = data["noMeioDiaDasCoisas"].data
 
   function handleNavClick(pageNumber) {
     setPage(pageNumber)
@@ -39,7 +39,7 @@ export function PronunciarOChao() {
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
       <img
         className={styles.backgroundImg}
-        src="https://drive.google.com/uc?export=view&id=1VSiVLdKYluQo7J3hNveKWCF_yOZyme0i"
+        src="https://drive.google.com/uc?export=view&id=1VwhNL_hwn_tsMPr_QwctqEA2tOnWhQ4M"
         alt="plano de fundo"
         ref={background}
         onLoad={handleBackgroundLoad}
@@ -50,14 +50,27 @@ export function PronunciarOChao() {
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>Pronunciar o Chão</h2>
+          <h2>No meio-dia das Coisas</h2>
+          
           <p>
-            Os textos deste volume, pela primeira vez pensados como um conjunto, foram escritos entre os anos de 2018 e 2021.
-            Desta forma, faz-se aqui um esforço para que eles, muitas vezes espaçados por anos,
-            lugares e pelo testemunho dos mais diversos fatos, não se tornem nem redundantes nem meramente contraditórios,
-            mas se espraiem como que induzidos por seus movimentos recíprocos.
-            Se o futebol é uma teoria sobre o acontecimento, aqui se está também a jogar.
+            <em>No meio-dia das Coisas</em> foi criado a partir de gravações feitas na cidade de Candeias, Bahia, em 2014. Tais registros foram inicialmente 
+            destinados a um trabalho de análise linguística de seus enunciadores, tornando-se, ali, <em>corpus</em>. Com o tempo, as palavras se impuseram às 
+            intenções da pesquisa – que em si já era suficientemente desinteressada.
           </p>
+
+          <p>
+	          Talvez alguns argumentem que não há justiça em fazer das palavras das pessoas algo tão diverso e alheio a suas intenções. O problema é que 
+            o próprio texto quer argumentar a este favor, não restando então dúvida sobre o veredito final: falar é defender, com toda a razão, as mais 
+            torpes injustiças.
+          </p>
+
+          <p>
+	          Por isso, quando ser injusto torna-se o modelo das ações e do modo de vida daqueles que pautam os destinos dos debates neste país, a 
+            questão parece ser requisitar para as palavras sua própria <em>injustiça essencial</em>. Ela é o oposto do cinismo, ferramenta inútil 
+            de quem pretende disfarçar a existência do mundo, do corpo, do nada.
+          </p>
+
+          <p className={styles.end}>[2021]</p>
         </div>
 
         <div className={styles.contentWrapper}>

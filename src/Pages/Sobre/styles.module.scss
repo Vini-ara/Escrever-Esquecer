@@ -33,9 +33,8 @@
     
     font-size: 2rem;
     
-    .Dedicatoria {
+    .end {
       text-align: end;
-      padding-right: 2.625rem;
     }
 
     .content {
@@ -43,7 +42,7 @@
       margin-top: 1rem;
       padding: 0 2rem 3rem;
 
-      height: calc(100vh - 11rem);
+      height: calc(100vh - 7rem);
 
       display: flex;
       flex-direction: column;

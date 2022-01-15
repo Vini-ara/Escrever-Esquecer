@@ -13,6 +13,7 @@ import { Toamasina } from "./Pages/Ciclos/Toamasina";
 import { PronunciarOChao } from "./Pages/Ciclos/PronunciarOChao";
 import { TerOlhosParaVer } from "./Pages/Ciclos/TerOlhosParaVer";
 import { UmSomEstrangeiro } from "./Pages/Ciclos/UmSomEstrangeiro";
+import { NoMeioDiaDasCoisas } from "./Pages/Ciclos/NoMeioDiaDasCoisas";
 
 
 import { OFutebolASerEscrito } from "./Pages/Ciclos/PronunciarOChao/OFutebolASerEscrito";
@@ -59,6 +60,14 @@ import { AQuietudeEQuaseUmSonho } from "./Pages/Ciclos/UmSomEstrangeiro/AQuietud
 import { Rua } from "./Pages/Ciclos/UmSomEstrangeiro/Rua";
 import { RuidoEstrutura } from "./Pages/Ciclos/UmSomEstrangeiro/RuidoEstrutura";
 import { TrazemosBolachaNaMochila } from "./Pages/Ciclos/UmSomEstrangeiro/TrazemosBolachaNaMochila";
+
+
+
+import { I } from "./Pages/Ciclos/NoMeioDiaDasCoisas/I";
+import { IIVidaEObraDe } from "./Pages/Ciclos/NoMeioDiaDasCoisas/IIVidaEObraDeJRamosSantos";
+import { OSistemaExuOgum } from "./Pages/Ciclos/OSistemaExuOgum";
+import { AlgumasCartas } from "./Pages/Ciclos/AlgumasCartas";
+
 
 
 // Define as rotas da aplicação
@@ -113,6 +122,14 @@ function App() {
         <Route path="/um-som-estrangeiro/rua" element={<Rua/>} />
         <Route path="/um-som-estrangeiro/ruido-estrutura" element={<RuidoEstrutura/>} />
         <Route path="/um-som-estrangeiro/trazemos-bolacha-na-mochila" element={<TrazemosBolachaNaMochila/>} />
+
+        <Route path="/no-meio-dia-das-coisas" element={<NoMeioDiaDasCoisas/>} />
+        <Route path="/no-meio-dia-das-coisas/I" element={<I />} />
+        <Route path="/no-meio-dia-das-coisas/II-vida-e-obra-de-j-Ramos-Santos" element={<IIVidaEObraDe />} />
+
+        <Route path="/o-sistema-exu-ogum" element={<OSistemaExuOgum />} />
+
+        <Route path="/algumas-cartas" element={<AlgumasCartas/>} />
 
         <Route path="sobre" element={<Sobre/>} />
       </Routes>

@@ -227,5 +227,48 @@ export const data = {
       ]
     }
     ]
+  },
+  oSistemaExuOgum: {
+    name: "O Sistema Exu-Ogum",
+    href: "o-sistema-exu-ogum"
+  },
+  algumasCartas: {
+    name: "Algumas cartas",
+    href: "algumas-cartas",
+    data: [
+      {
+        heading: "",
+        content: [
+          {
+            name: "Boa Nova",
+            href: "boa-nova"
+          },
+          {
+            name: "Campo Formoso",
+            href: "campo-formoso"
+          },
+          {
+            name: 'Candeias',
+            href: "candeias"
+          },
+          {
+            name: "Encruzilhada",
+            href: "encruzilhada"
+          },
+          {
+            name: "Iuiu",
+            href: "iuiu"
+          },
+          {
+            name: "Mansidão",
+            href: "mansidao"
+          },
+          {
+            name: "Nova Redenção",
+            href: "nova-redencao"
+          }
+        ]
+      }
+    ]
   }
 }

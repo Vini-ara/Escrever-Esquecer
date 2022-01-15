@@ -28,16 +28,18 @@ export function Header({handleRedirect}) {
 
   useEffect(() => {
     if(width <= 800) {
-      setPathHasMenu(true)
+      setPathHasMenu(true);
+    } else if(location.pathname === "/home" || location.pathname === "/sobre") {
+      setPathHasMenu(false);
+    } else if(location.pathname !== "/home" || location.pathname !== "/sobre") {
+      setPathHasMenu(true);
     } else {
-      setPathHasMenu(false)
+      setPathHasMenu(false);
     }
-  }, [width])
+  }, [width, location.pathname])
 
   function Redirect(route) {
-    console.log([window.location.pathname, route])
     if (route === window.location.pathname) {
-      console.log("equal")
       return window.location.reload();
     }
 
@@ -52,9 +54,6 @@ export function Header({handleRedirect}) {
     setModalActive((prevState) => !prevState)
   }
 
-
-  console.log(width)
-
   return (
     <>
       <header className={styles.header}>
@@ -65,7 +64,7 @@ export function Header({handleRedirect}) {
           </h1>
         </button>
         <nav>
-          <button className={styles.about} onClick={() => Redirect("/sobre")}>Sobre</button>
+          {!pathHasMenu && <button className={styles.about} onClick={() => Redirect("/sobre")}>Sobre</button>}
           <button className={styles.random}>Leve-me a qualquer lugar</button>
 
           {pathHasMenu && <MdMenu className={styles.menuIcon} onClick={handleModalState}/>}

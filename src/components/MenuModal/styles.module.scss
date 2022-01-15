@@ -98,5 +98,44 @@
         filter: brightness(0.9) 
       }
     }
+
+    .modalClose {
+      height: 2rem; 
+      width: 2rem; 
+      position: absolute;
+      top: .5rem; right: .5rem;
+      cursor: pointer;
+      background-color: var(--background-white);
+      border-radius: 1rem;
+      transition: all .3s;
+
+      &:hover {
+        filter: brightness(0.9);
+        color: var(--red-300);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .modalOverlay {
+    &.modalActive {
+
+      .modalContent {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .modalOverlay {
+    &.modalActive {
+
+      .modalContent {
+        width: 100%;
+        border-radius: 0;
+      }
+    }
   }
 }

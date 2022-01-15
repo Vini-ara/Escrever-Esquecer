@@ -12,7 +12,7 @@ export function Sobre() {
   const navigation = useNavigate();
 
   function handleRedirect(path) {
-    if(path === window.location.pathname) {
+    if (path === window.location.pathname) {
       return window.location.reload()
     } else {
       setTransition(true)
@@ -37,45 +37,64 @@ export function Sobre() {
         onLoad={() => handleBackgroundLoad()}
       />
 
-      <Header handleRedirect={handleRedirect}/>
+      <Header handleRedirect={handleRedirect} />
 
       {/* div envolvendo o conteúdo */}
       <div className={styles.wrapper}>
 
         {/* dedicatória */}
 
-        <p className={styles.Dedicatoria}>Para Zeca,</p>
+       
 
         {/* texto principal da página */}
         <main className={styles.content}>
+          <p>Para Zeca,</p>
+
+          <p className={styles.end}><em>Pensarán vuestras mercedes ahora que es poco trabajo hinchar un perro?</em></p>
+
           <p>
-            Escrever Esquecer é aquilo que permanece da voz de alguém que calhou chamar-se Vítor Ribeiro-Santos. 
-            Há aqui a forma possível que assumiram diversos processos, ciclos, ritos nos quais um corpo e suas condições mergulharam, 
-            juntos, desde 2014, como maneira de se fazer sentir e dizer o mundo. 
-            Escrever Esquecer é também parte de um título de Jeanne-Marie Gagnebin, em um texto sobre a obra de Walter Benjamin: 
+            <strong>Escrever Esquecer</strong> é aquilo que permanece da voz de alguém que calhou chamar-se
+            Vítor Ribeiro-Santos. Há aqui a forma possível que assumiram diversos processos,
+            ciclos, ritos nos quais um corpo e suas condições mergulharam, juntos, desde 2014,
+            como maneira de se fazer sentir, produzir e dizer o mundo. Escrever Esquecer é também
+            parte de um título de Jeanne-Marie Gagnebin, em uma obra sobre Walter Benjamin:
             coincidência alguma nisso.
           </p>
+
           <p>
-            <i>Escrever Esquecer</i>, além disso: Beatriz Calheta, Letícia Hayashi e Vítor Rodrigues – 
-            editoras/criadoras e realizador/criador das formas de tudo que está aqui. 
-            A eles, simplesmente tudo.
+            <em>Escrever Esquecer</em>, além disso: Beatriz Calheta, Letícia Hayashi e Vinicius Araujo –
+            editoras/criadoras e realizador/programador das formas de tudo que está aqui. A eles,
+            simplesmente tudo.
           </p>
+
           <p>
-          Nosso sítio está dividido em algumas seções: <i>Algumas cartas</i>, <i>Escrever com os pés</i>, <i>olhos/água</i>
-          , <i>No meio dia das coisas</i>, <i>Prosa dos dias</i>, <i>Ter olhos pra ver</i>, <i>Toamasina</i>. 
-          Cada uma dessas seções diz respeito a um ciclo crítico ou criativo diferente, oriundo de anos diferentes, 
-          com intenções diferentes. Um continente em suas cidades. Por isso, mesmo como unidades autônomas, 
-          cada pedaço deste lugar funciona interdependentemente, pode ser acessado por novas estradas – 
-          o botão <i>Leve-me a qualquer lugar</i> é parte desta ideia modesta.
+            Nosso sítio está dividido em algumas seções: <em>Algumas cartas</em>, <em>Pronunciar o chão</em>, <em>olhos/água</em>
+            , <em>No meio dia das coisas</em>, <em>Um som estrangeiro</em>, <em>Ter olhos pra ver</em>, <em>Toamasina</em>, <em>O Sistema Exu-Ogum</em>.
+            Cada um desses ciclos diz respeito a um périplo
+            crítico ou criativo diferente, oriundo de anos diferentes, com intenções diferentes e
+            resultados distintos. Um continente em suas cidades. Por isso, mesmo como unidades
+            autônomas, cada pedaço deste lugar funciona interdependentemente, pode ser acessado
+            por novas estradas, pretende estar em relação àquilo que lhe é diferença – o botão <em>Leve-
+              me a qualquer lugar</em>, as imagens e os hiperlinks são parte desta ideia modesta.
           </p>
+
           <p>
-            Mas por que criar isto aqui, a esta altura dos acontecimentos? 
-            Ora, sim. Pra mais urgente das perguntas, talvez nenhuma resposta seja necessária. 
-            Escrever Esquecer quer existir da mesma maneira como é possível que espécies chamem 
-            – de alguma forma – a escuridão abissal de casa. A vida persiste a contragosto de si. 
-            Se você trouxe sua voz, se você está agora aqui, seu corpo diz ao mundo que, uma vez mais, prosseguimos.
+            Mas por que criar isso tudo aqui, a esta altura dos acontecimentos? Ora, esta pergunta
+            não foi poucas vezes feita ao longo deste processo. E pra mais urgente das perguntas,
+            talvez nenhuma resposta seja, de fato, necessária. Este Escrever Esquecer quer existir da
+            mesma maneira como é possível que espécies chamem – de alguma forma – o abismo
+            de casa. As raízes se afundam na escuridão, a acácias-rubras florescem, as pessoas
+            soluçam: a vida persiste a contragosto de si, e dá seu próprio testemunho como
+            caminho. Não há maiores pretensões sob o dia.
           </p>
+
           <p>Obrigado. E mais nada resta a falar.</p>
+
+          <p>Criação de textos: emaildevitoribeiro@gmail.com</p>
+
+          <p>Criação de vídeos e edição de imagens: escreveresquecer@gmail.com</p>
+
+          <p>Criação e desenvolvimento do site: vinicius.ar02@gmail.com</p>
         </main>
       </div>
     </div>

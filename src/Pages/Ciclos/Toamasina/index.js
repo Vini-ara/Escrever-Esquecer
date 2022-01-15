@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 import styles from "../ciclos.module.scss";
@@ -15,7 +15,7 @@ export function Toamasina() {
 
   const navigation = useNavigate();
 
-  //const background = useRef();
+  const background = useRef();
 
   const info = data["toamasina"].data
 
@@ -23,9 +23,9 @@ export function Toamasina() {
     setPage(pageNumber)
   }
 
-  // function handleBackgroundLoad() {
-  //   background.current.style.opacity = 0.15
-  // }
+  function handleBackgroundLoad() {
+    background.current.style.opacity = 0.15
+  }
 
 
   function handleRedirect(path) {
@@ -37,13 +37,13 @@ export function Toamasina() {
 
   return (
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
-      {/* <img
+      <img
         className={styles.backgroundImg}
-        src="https://drive.google.com/uc?export=view&id=1gV3lXRHm44I15qcfgL7eSfx-TRxqyBod"
+        src="https://drive.google.com/uc?export=view&id=1_t_co2IMBp7bNRMNRlie0vN9CSHBjZlV"
         alt="plano de fundo"
         ref={background}
         onLoad={handleBackgroundLoad}
-      /> */}
+      />
       <Header handleRedirect={handleRedirect} />
 
 

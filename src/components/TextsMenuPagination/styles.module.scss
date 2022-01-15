@@ -1,12 +1,12 @@
 .content {
-  padding: 1rem 3rem 1rem 5rem;
+  padding: 0rem 3rem 1rem 5rem;
 
   min-height: 100%; 
 
   display: none;
   visibility: hidden;
 
-  grid-template-rows: 3rem repeat(6, 5rem);
+  grid-template-rows: 3rem repeat(6, 6rem);
 
   gap: 1rem;
 
@@ -39,7 +39,6 @@
 
     grid-column: 1;
 
-    //box-shadow: 0 0.5rem 20px rgba(0, 0, 0, 0.301);
     cursor: pointer;
 
     color: var(--red-300);
@@ -53,16 +52,9 @@
       filter: brightness(1.1);
     }
 
-    img {
-      border-radius: 1rem;
-      height: 100%;
-      width: 4.5rem;
-      margin-right: 1rem;
-    }
-
     h3 {
       font-weight: bolder;
-      font-size: 1.25rem;
+      font-size: 1.65rem;
       display: flex;
       align-items: center;
     }
