@@ -87,7 +87,7 @@
 
     &.center {
       width: fit-content;
-
+      text-align: center;
       margin: 2rem 0; 
       
     }
@@ -97,6 +97,30 @@
       align-self: end;
 
       text-align: end;
+    }
+
+    &.oneFourth {
+      width: 75%;
+    }
+
+    &.threeFourths {
+      width: 75%;
+      text-align: end;
+    }
+
+    &.flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &.almostCenter {
+      width: 62.5%;
+      margin-left: 37.5%;
+    }
+
+    &.almostPastCenter {
+      width: 37.5%;
+      margin-left: 62.5%;
     }
 
     a {
@@ -155,6 +179,14 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 2.5rem; 
+    max-width: 100%;
+    overflow: hidden;
   }
 }
 

@@ -64,6 +64,10 @@ export function Home() {
           <button className={`${styles.card} ${styles.card7}`} onClick={() => {handleRedirect("/no-meio-dia-das-coisas")}}>
             <h2>No meio-dia das coisas</h2>
           </button>
+
+          <button className={`${styles.card} ${styles.card8}`} onClick={() => {handleRedirect("/olhos-agua")}}>
+            <h2>Olhos/Água</h2>
+          </button> 
         </div>
       )}
     </div>

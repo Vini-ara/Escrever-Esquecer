@@ -51,12 +51,22 @@ export function PronunciarOChao() {
       <section className={styles.wrapper}>
         <div className={styles.about}>
           <h2>Pronunciar o Chão</h2>
+
+          <p className={styles.end}>
+            <em>Est deus in nobis agitante calescimus illo</em> – Ovídio
+          </p>
+
           <p>
-            Os textos deste volume, pela primeira vez pensados como um conjunto, foram escritos entre os anos de 2018 e 2021.
-            Desta forma, faz-se aqui um esforço para que eles, muitas vezes espaçados por anos,
-            lugares e pelo testemunho dos mais diversos fatos, não se tornem nem redundantes nem meramente contraditórios,
-            mas se espraiem como que induzidos por seus movimentos recíprocos.
-            Se o futebol é uma teoria sobre o acontecimento, aqui se está também a jogar.
+            O futebol se situa na dobra movente da estética: ele é forma desinteressada, mas também se direciona a 
+            algo; ele é corpo, mas também abstração em sentido; ele é presença, mas também evasão e dúvida; ele é 
+            acontecimento, mas também defasagem. Eis, portanto, o interesse desses textos, escritos entre 2018 e 2021 
+            e pela primeira vez reunidos como um conjunto: pensar-se como formas em movimento. O futebol, portanto, 
+            escancara o óbvio que muitos teóricos das artes e da literatura insistem em negar, que é o fato de que – 
+            como diz Ovídio – existe uma relação intrínseca entre deus e movimento, ou seja, entre sentido e incorporação.
+          </p>
+
+          <p>
+            Corpo e palavra <em>são</em> e, ao mesmo tempo, <em>dizem</em>.
           </p>
         </div>
 

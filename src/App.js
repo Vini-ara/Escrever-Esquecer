@@ -14,6 +14,8 @@ import { PronunciarOChao } from "./Pages/Ciclos/PronunciarOChao";
 import { TerOlhosParaVer } from "./Pages/Ciclos/TerOlhosParaVer";
 import { UmSomEstrangeiro } from "./Pages/Ciclos/UmSomEstrangeiro";
 import { NoMeioDiaDasCoisas } from "./Pages/Ciclos/NoMeioDiaDasCoisas";
+import { OSistemaExuOgum } from "./Pages/Ciclos/OSistemaExuOgum";
+import { AlgumasCartas } from "./Pages/Ciclos/AlgumasCartas";
 
 
 import { OFutebolASerEscrito } from "./Pages/Ciclos/PronunciarOChao/OFutebolASerEscrito";
@@ -60,13 +62,20 @@ import { AQuietudeEQuaseUmSonho } from "./Pages/Ciclos/UmSomEstrangeiro/AQuietud
 import { Rua } from "./Pages/Ciclos/UmSomEstrangeiro/Rua";
 import { RuidoEstrutura } from "./Pages/Ciclos/UmSomEstrangeiro/RuidoEstrutura";
 import { TrazemosBolachaNaMochila } from "./Pages/Ciclos/UmSomEstrangeiro/TrazemosBolachaNaMochila";
+import { MeuBairroNuncaFoiIgual } from "./Pages/Ciclos/UmSomEstrangeiro/MeuBairroNuncaFoiIgual";
 
 
 
 import { I } from "./Pages/Ciclos/NoMeioDiaDasCoisas/I";
 import { IIVidaEObraDe } from "./Pages/Ciclos/NoMeioDiaDasCoisas/IIVidaEObraDeJRamosSantos";
-import { OSistemaExuOgum } from "./Pages/Ciclos/OSistemaExuOgum";
-import { AlgumasCartas } from "./Pages/Ciclos/AlgumasCartas";
+
+import { BoaNova } from "./Pages/Ciclos/AlgumasCartas/BoaNova";
+import { CampoFormoso } from "./Pages/Ciclos/AlgumasCartas/CampoFormoso";
+import { Candeias } from "./Pages/Ciclos/AlgumasCartas/Candeias";
+import { Encruzilhada } from "./Pages/Ciclos/AlgumasCartas/Encruzilhada";
+import { Iuiu } from "./Pages/Ciclos/AlgumasCartas/Iuiu";
+import { Mansidao } from "./Pages/Ciclos/AlgumasCartas/Mansidao";
+import { NovaRedencao } from "./Pages/Ciclos/AlgumasCartas/NovaRedencao";
 
 
 
@@ -122,6 +131,7 @@ function App() {
         <Route path="/um-som-estrangeiro/rua" element={<Rua/>} />
         <Route path="/um-som-estrangeiro/ruido-estrutura" element={<RuidoEstrutura/>} />
         <Route path="/um-som-estrangeiro/trazemos-bolacha-na-mochila" element={<TrazemosBolachaNaMochila/>} />
+        <Route path="/um-som-estrangeiro/meu-bairro-nunca-foi-igual" element={<MeuBairroNuncaFoiIgual/>} />
 
         <Route path="/no-meio-dia-das-coisas" element={<NoMeioDiaDasCoisas/>} />
         <Route path="/no-meio-dia-das-coisas/I" element={<I />} />
@@ -130,7 +140,14 @@ function App() {
         <Route path="/o-sistema-exu-ogum" element={<OSistemaExuOgum />} />
 
         <Route path="/algumas-cartas" element={<AlgumasCartas/>} />
-
+        <Route path="/algumas-cartas/boa-nova" element={<BoaNova/>} />
+        <Route path="/algumas-cartas/campo-formoso" element={<CampoFormoso/>} />
+        <Route path="/algumas-cartas/candeias" element={<Candeias/>} />
+        <Route path="/algumas-cartas/encruzilhada" element={<Encruzilhada/>} />
+        <Route path="/algumas-cartas/iuiu" element={<Iuiu/>} />
+        <Route path="/algumas-cartas/mansidao" element={<Mansidao/>} />
+        <Route path="/algumas-cartas/nova-redencao" element={<NovaRedencao/>} />
+ 
         <Route path="sobre" element={<Sobre/>} />
       </Routes>
     </BrowserRouter>

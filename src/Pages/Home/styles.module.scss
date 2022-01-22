@@ -99,12 +99,18 @@
     }
   
     &.card6 {
-      top: 80%; left: 28%; 
+      top: 80%; left: 20%; 
       animation: opacity-in 3s ease forwards;
     }
   
     &.card7 {
-      top: 91%; right: 22%; 
+      top: 91%; right: 18%; 
+      animation: opacity-in 3s ease forwards;
+    }
+
+    &.card8 {
+      bottom: 9%; 
+      left: 40%;
       animation: opacity-in 3s ease forwards;
     }
   }

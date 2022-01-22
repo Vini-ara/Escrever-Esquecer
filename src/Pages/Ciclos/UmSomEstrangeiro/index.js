@@ -52,10 +52,11 @@ export function UmSomEstrangeiro() {
         <div className={styles.about}>
           <h2>Um som estrangeiro</h2>
           <p>
-            <strong>Um som estrangeiro</strong> é um exercício livre de construção crítica sobre algumas genealogias musicais. Longe da prática especializada,
-            estes textos pretendem pensar a música como uma prática puramente sensorial – portanto, política e ética: saída que dá conta da
-            limitação de compreensão técnica e da inserção destas palavras em contexto. Mote-e-glosa: a música também depõe para a maneira
-            como os corpos se fabricam e se deslocam, ritmicamente, no mundo.
+            <strong>Um som estrangeiro</strong> é um exercício livre de construção crítica sobre algumas genealogias 
+            musicais. Longe da prática especializada, estes textos pretendem pensar a música como uma prática puramente 
+            sensorial – portanto, política e ética: saída que dá conta da limitação de compreensão técnica e da inserção 
+            destas palavras em contexto. Mote-e-glosa: a música também depõe para a maneira como os corpos se fabricam e 
+            se deslocam, ritmicamente, no mundo.
           </p>
         </div>
 
