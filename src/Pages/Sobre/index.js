@@ -44,11 +44,10 @@ export function Sobre() {
 
         {/* dedicatória */}
 
+        <p className={styles.dedicatoria}>Para Zeca,</p> 
        
-
         {/* texto principal da página */}
         <main className={styles.content}>
-          <p>Para Zeca,</p>
 
           <p className={styles.end}><em>Pensarán vuestras mercedes ahora que es poco trabajo hinchar un perro?</em></p>
 
