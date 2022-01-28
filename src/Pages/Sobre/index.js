@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { useTitle } from "../../hooks/useTitle";
+
 import { Header } from "../../components/Header";
 
 import styles from "./styles.module.scss";
@@ -10,6 +12,8 @@ export function Sobre() {
   const background = useRef();
 
   const navigation = useNavigate();
+
+  useTitle("Sobre")
 
   function handleRedirect(path) {
     if (path === window.location.pathname) {

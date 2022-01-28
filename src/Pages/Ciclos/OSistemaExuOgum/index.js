@@ -7,11 +7,11 @@ import { Header } from "../../../components/Header";
 import pdfobject from "pdfobject";
 
 import pdf from "../../../pdf/O Sistema Exu-Ogum.pdf"; 
+import { useTitle } from "../../../hooks/useTitle";
 
 
 
 export function OSistemaExuOgum() {
-  
   const [transition, setTransition] = useState(false); 
 
   const navigation = useNavigate(); 
@@ -19,16 +19,13 @@ export function OSistemaExuOgum() {
   const background = useRef();
   const pdfContainer = useRef(); 
 
-
-console.log(pdfContainer.current)
+  useTitle("O Sistema Exu-Ogum");
 
   useEffect(() => {
     pdfobject.embed(pdf, pdfContainer.current, {
       height: "70vh"
     });
   }, [])
-
-  
 
   function handleBackgroundLoad() {
     background.current.style.opacity = 0.15

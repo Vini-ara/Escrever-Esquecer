@@ -7,6 +7,7 @@ import { Header } from "../../../components/Header";
 import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
+import { useTitle } from "../../../hooks/useTitle";
 
 
 export function Toamasina() {
@@ -18,6 +19,8 @@ export function Toamasina() {
   const background = useRef();
 
   const info = data["toamasina"].data
+
+  useTitle("Toamasina");
 
   function handleNavClick(pageNumber) {
     setPage(pageNumber)

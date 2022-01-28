@@ -31,12 +31,26 @@
   max-height: calc(100vh - 6rem);
 
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem 0;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  overflow: hidden;
   background-color: transparent;
+
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.404); 
+    border-radius: 8px;
+  }
+
+  scrollbar-color: rgba(0, 0, 0, 0.404) transparent;
+  scrollbar-width: 10px;
 
   .about {
     padding-right: 2rem;
@@ -69,7 +83,6 @@
 
   .contentWrapper {
     display: grid;
-
     grid-template-columns: 1fr 2rem;
     padding: 1rem 2rem;
 
@@ -369,8 +382,19 @@
       grid-template-columns: 100%;
       grid-template-rows: 1fr 2rem;
       padding: 0; 
+      padding-bottom: 2rem; 
       gap: 1.5rem;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    &::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+    scrollbar-width: 0px;
   }
 }
 

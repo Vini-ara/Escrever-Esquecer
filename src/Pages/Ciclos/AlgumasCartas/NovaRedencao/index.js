@@ -7,11 +7,14 @@ import { TextsNavigation } from "../../../../components/TextsNavigation";
 import { MdWest } from "react-icons/md";
 
 import styles from "../../textos.module.scss";
+import { useTitle } from "../../../../hooks/useTitle";
 
 export function NovaRedencao() {
   const [transition, setTransition] = useState(false); 
 
   const navigation = useNavigate();
+
+  useTitle("Nova Redenção");
 
   function handleRedirect(path) {
     

@@ -7,11 +7,14 @@ import { TextsNavigation } from "../../../../components/TextsNavigation";
 import { MdWest } from "react-icons/md";
 
 import styles from "../../textos.module.scss";
+import { useTitle } from "../../../../hooks/useTitle";
 
 export function AliancasDemoniacas() {
   const [transition, setTransition] = useState(false); 
 
   const navigation = useNavigate();
+
+  useTitle("Alianças demoníacas");
 
   function handleRedirect(path) {
     
@@ -38,10 +41,8 @@ export function AliancasDemoniacas() {
           <MdWest  size="3rem" />
         </div>
 
-        <h2>Diante do outro, em nome de si</h2>
+        <h2>Alianças demoníacas</h2>
         <hr/>
-
-        <p className={styles.center}>*</p>
 
         <p>
           Talvez uma das grandes lições da antropologia ao mundo ocidental seja aquela que versa 

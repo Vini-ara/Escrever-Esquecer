@@ -7,6 +7,7 @@ import { Header } from "../../../components/Header";
 import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
+import { useTitle } from "../../../hooks/useTitle";
 
 
 export function TerOlhosParaVer() {
@@ -19,6 +20,8 @@ export function TerOlhosParaVer() {
 
   const info = data["terOlhosParaVer"].data
 
+  useTitle("Ter olhos para ver"); 
+
   function handleNavClick(pageNumber) {
     setPage(pageNumber)
   }
@@ -27,13 +30,11 @@ export function TerOlhosParaVer() {
     background.current.style.opacity = 0.15
   }
 
-
   function handleRedirect(path) {
 
     setTransition(true)
     setTimeout(() => navigation(path), 1000)
   }
-
 
   return (
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>

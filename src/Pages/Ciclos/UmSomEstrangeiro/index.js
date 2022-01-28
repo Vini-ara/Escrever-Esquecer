@@ -7,6 +7,7 @@ import { Header } from "../../../components/Header";
 import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
+import { useTitle } from "../../../hooks/useTitle";
 
 
 export function UmSomEstrangeiro() {
@@ -18,6 +19,8 @@ export function UmSomEstrangeiro() {
   const background = useRef();
 
   const info = data["umSomEstrangeiro"].data
+
+  useTitle("Um som estrangeiro");
 
   function handleNavClick(pageNumber) {
     setPage(pageNumber)
@@ -45,8 +48,6 @@ export function UmSomEstrangeiro() {
         onLoad={handleBackgroundLoad}
       />
       <Header handleRedirect={handleRedirect} />
-
-
 
       <section className={styles.wrapper}>
         <div className={styles.about}>

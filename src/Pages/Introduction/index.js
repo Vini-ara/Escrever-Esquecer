@@ -3,21 +3,26 @@ import { useNavigate } from "react-router-dom";
 
 import YoutubeBackground from 'react-youtube-background'
 
+import { useTitle } from "../../hooks/useTitle";
+
 import styles from "./styles.module.scss";
 
 export function Introduction() {
   const [transition, setTransition] = useState(false)
   const [ready, setReady] = useState(false)
   
+  useTitle("Sobre")
+  
   const navigation = useNavigate();
 
-  const viewWidth = window.innerWidth
-
+  const viewWidth = window.innerWidth;
+  
   useEffect(() => {
-    if(viewWidth < 1024) {
+    document.title = "sobre"
+    if(viewWidth < 768) {
       navigation("home")
     }
-  }, [viewWidth, navigation])
+  }, [viewWidth, navigation]);
 
   return (
     <div className={styles.wrapper}>

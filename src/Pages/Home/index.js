@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Header } from "../../components/Header";
+import { useTitle } from "../../hooks/useTitle";
 
 import styles from "./styles.module.scss";
 import Logo from "../../assets/flor.png";
@@ -9,6 +10,8 @@ import Logo from "../../assets/flor.png";
 export function Home() {
   const [showCiclos, setShowCiclos] = useState(false);
   const [transition, setTransition] = useState(false);
+
+  useTitle("Home");
 
   const CardContainer = useRef();
 

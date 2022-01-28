@@ -7,11 +7,14 @@ import { TextsNavigation } from "../../../../components/TextsNavigation";
 import { MdWest } from "react-icons/md";
 
 import styles from "../../textos.module.scss";
+import { useTitle } from "../../../../hooks/useTitle";
 
 export function OsDeusesDoFutebol() {
   const [transition, setTransition] = useState(false); 
 
   const navigation = useNavigate();
+
+  useTitle("Os deuses do futebol");
 
   function handleRedirect(path) {
     
@@ -38,7 +41,7 @@ export function OsDeusesDoFutebol() {
           <MdWest  size="3rem" />
         </div>
 
-        <h2>Imagens, imagens</h2>
+        <h2>Os deuses do futebol</h2>
         <hr/>
         
         <p>

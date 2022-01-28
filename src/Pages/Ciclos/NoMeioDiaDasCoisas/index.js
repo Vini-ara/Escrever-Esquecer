@@ -7,6 +7,7 @@ import { Header } from "../../../components/Header";
 import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
+import { useTitle } from "../../../hooks/useTitle";
 
 
 export function NoMeioDiaDasCoisas() {
@@ -18,6 +19,8 @@ export function NoMeioDiaDasCoisas() {
   const background = useRef();
 
   const info = data["noMeioDiaDasCoisas"].data
+
+  useTitle("No meio-dia das coisas")
 
   function handleNavClick(pageNumber) {
     setPage(pageNumber)

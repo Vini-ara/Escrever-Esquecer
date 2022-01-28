@@ -6,6 +6,7 @@ import styles from "../ciclos.module.scss";
 import { Header } from "../../../components/Header";
 import { data } from "../../../data/data";
 import { MdPlace } from "react-icons/md";
+import { useTitle } from "../../../hooks/useTitle";
 
 
 export function AlgumasCartas() {
@@ -17,6 +18,8 @@ export function AlgumasCartas() {
   const imgContainer = useRef(); 
 
   const info = data["algumasCartas"].data
+
+  useTitle("Algumas Cartas");
 
   function handleImgLoad(ref, opacity) {
     ref.current.style.opacity = opacity

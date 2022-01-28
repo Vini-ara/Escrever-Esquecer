@@ -3,6 +3,7 @@ import { MdWest } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { Header } from "../../../../components/Header";
 import { TextsNavigation } from "../../../../components/TextsNavigation";
+import { useTitle } from "../../../../hooks/useTitle";
 
 import styles from "../../textos.module.scss";
 
@@ -10,6 +11,8 @@ export function NucleosVazios() {
   const [transition, setTransition] = useState(false); 
 
   const navigation = useNavigate();
+
+  useTitle("Núcleos vazios")
 
   function handleRedirect(path) {
     

@@ -7,11 +7,14 @@ import { TextsNavigation } from "../../../../components/TextsNavigation";
 import { MdWest } from "react-icons/md";
 
 import styles from "../../textos.module.scss";
+import { useTitle } from "../../../../hooks/useTitle";
 
 export function MeuBairroNuncaFoiIgual() {
   const [transition, setTransition] = useState(false);
 
   const navigation = useNavigate();
+
+  useTitle("Meu bairro nunca foi igual");
 
   function handleRedirect(path) {
 
@@ -38,7 +41,7 @@ export function MeuBairroNuncaFoiIgual() {
           <MdWest size="3rem" />
         </div>
 
-        <h2>A quietude é quase um sonho</h2>
+        <h2>Meu bairro nunca foi igual</h2>
         <hr />
 
         <p>

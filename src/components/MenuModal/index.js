@@ -27,7 +27,6 @@ export function MenuModal({handleRedirect, isActive, handleModalState}) {
   }, [width])
 
   function Redirect(route) {
-    console.log([window.location.pathname, route])
     if (route === window.location.pathname) {
       console.log("equal")
       return window.location.reload();
