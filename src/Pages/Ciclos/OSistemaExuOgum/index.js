@@ -6,18 +6,19 @@ import styles from "../ciclos.module.scss";
 import { Header } from "../../../components/Header";
 import pdfobject from "pdfobject";
 
-import pdf from "../../../pdf/O Sistema Exu-Ogum.pdf"; 
+import pdf from "../../../pdf/O Sistema Exu-Ogum.pdf";
 import { useTitle } from "../../../hooks/useTitle";
+import { MdPictureAsPdf } from "react-icons/md";
 
 
 
 export function OSistemaExuOgum() {
-  const [transition, setTransition] = useState(false); 
+  const [transition, setTransition] = useState(false);
 
-  const navigation = useNavigate(); 
+  const navigation = useNavigate();
 
   const background = useRef();
-  const pdfContainer = useRef(); 
+  const pdfContainer = useRef();
 
   useTitle("O Sistema Exu-Ogum");
 
@@ -31,7 +32,7 @@ export function OSistemaExuOgum() {
     background.current.style.opacity = 0.15
   }
 
-  
+
   function handleRedirect(path) {
     setTransition(true)
     setTimeout(() => navigation(path), 1000)
@@ -47,16 +48,22 @@ export function OSistemaExuOgum() {
         ref={background}
         onLoad={handleBackgroundLoad}
       />
-      <Header handleRedirect={handleRedirect}/>
+      <Header handleRedirect={handleRedirect} />
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>O Sistema Exu-Ogum</h2>
-          
+          <div className={styles.aboutHeading}>
+            <h2>O Sistema Exu-Ogum</h2>
+
+            <button>
+              <MdPictureAsPdf size="2rem" />
+            </button>
+          </div>
+
           <p>
-            Fruto de dois anos e meio de pesquisa, <strong>O Sistema Exu-Ogum</strong> (publicado com o título de Com Exu-Ogum, pelas Encruzilhadas) 
-            é uma leitura crítica sobre a obra do poeta Ricardo Aleixo. Em verdade, é uma tentativa de observar como esta obra atravessa tempos, 
-            lugares, pessoas, sendo motivada e motivando um conceito renovado de literatura – em que o corpo não esteja só implicado, mas seja 
+            Fruto de dois anos e meio de pesquisa, <strong>O Sistema Exu-Ogum</strong> (publicado com o título de Com Exu-Ogum, pelas Encruzilhadas)
+            é uma leitura crítica sobre a obra do poeta Ricardo Aleixo. Em verdade, é uma tentativa de observar como esta obra atravessa tempos,
+            lugares, pessoas, sendo motivada e motivando um conceito renovado de literatura – em que o corpo não esteja só implicado, mas seja
             disputado e reconstruído pela experiência do sentido.
           </p>
 

@@ -8,16 +8,16 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   z-index: 99;
+  
   cursor: pointer;
+  
+  transition: all 1s; 
 
   opacity: 0;
-
-  transition: all 1s; 
   visibility: hidden;
 
   &.modalActive {
     visibility: visible;
-
     opacity: 1;
 
     .modalContent {
@@ -32,25 +32,24 @@
     position: absolute;
     right: 0;
 
-    padding: 2rem 1rem; 
-
     background-color: var(--background-white);
     
+    padding: 2rem 1rem; 
+    border-radius: 2rem 0 0 2rem;
 
-    border-radius: 2rem 0 0 2rem ; 
-
-    z-index: 999;
+    white-space: nowrap;
+    
     cursor: default;
 
-    transition: width 1s; 
-    white-space:nowrap;
-    
-    
+    z-index: 999;
 
+    transition: width 1s; 
+    
     h2 {
       margin-bottom: 2rem;
 
       flex: 1;
+
       text-align: center;
       font-size: 1.75em; 
     }
@@ -59,21 +58,21 @@
       list-style: none;
       
       border-bottom: 1px solid black;
-      
-
+  
       li {
         padding: .5rem 0;
         border-top: 1px solid black; 
-        
       }
 
       ul {
         margin-top: 0rem; 
         margin-left: 2rem; 
+
         border: none;
 
         li {
           margin: 0;
+
           border: none;
         }
       }
@@ -87,9 +86,9 @@
       font-size: 1.5rem;
 
       padding: 0 .5rem .25rem; 
-      cursor: pointer;
-      
       border-radius: 1.25rem;
+
+      cursor: pointer;
 
       transition: all .3s; 
 
@@ -102,11 +101,16 @@
     .modalClose {
       height: 2rem; 
       width: 2rem; 
+
       position: absolute;
       top: .5rem; right: .5rem;
+
       cursor: pointer;
+
       background-color: var(--background-white);
+      
       border-radius: 1rem;
+
       transition: all .3s;
 
       &:hover {

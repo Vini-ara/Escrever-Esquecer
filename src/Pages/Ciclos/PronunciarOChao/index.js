@@ -6,9 +6,11 @@ import styles from "../ciclos.module.scss";
 import { Header } from "../../../components/Header";
 import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
+
 import { data } from "../../../data/data";
 import { useTitle } from "../../../hooks/useTitle";
 
+import { MdPictureAsPdf } from "react-icons/md";
 
 export function PronunciarOChao() {
   const [page, setPage] = useState(1);
@@ -53,7 +55,13 @@ export function PronunciarOChao() {
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>Pronunciar o Chão</h2>
+          <div className={styles.aboutHeading}>
+            <h2>Pronunciar o Chão</h2>
+
+            <button>
+              <MdPictureAsPdf size="2rem"/>
+            </button>
+          </div>
 
           <p className={styles.end}>
             <em>Est deus in nobis agitante calescimus illo</em> – Ovídio

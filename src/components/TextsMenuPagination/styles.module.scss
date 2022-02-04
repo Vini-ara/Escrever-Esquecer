@@ -1,13 +1,12 @@
 .content {
-  padding: 0rem 3rem 1rem 5rem;
-
   min-height: 100%; 
+
+  padding: 0rem 3rem 1rem 5rem;
 
   display: none;
   visibility: hidden;
 
   grid-template-rows: 3rem repeat(6, 6rem);
-
   gap: 1rem;
 
   h2 {
@@ -16,6 +15,7 @@
 
   &.activePage {
     display: grid;
+
     visibility: visible;
 
     .card {
@@ -25,17 +25,18 @@
 
   .card {
     height: fit-content;
-    max-width: 20rem;
     width: fit-content;
+    max-width: 20rem;
 
-    align-self: center;
-
+    
     padding: 0.75rem 1.5rem;
+    border-radius: 2.5rem;
+    
+    align-self: center;
     display: flex;
 
     background-color: rgb(214, 215, 210, 0.5);
 
-    border-radius: 2.5rem;
 
     grid-column: 1;
 

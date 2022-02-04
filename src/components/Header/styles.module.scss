@@ -12,13 +12,13 @@
 
   .Logo {
     width: fit-content;
-    display: flex;
-    border: none;
-    background-color: transparent;
-    color: var(--black);
 
     display: flex;
     align-items: center;
+
+    border: none;
+    background-color: transparent;
+    color: var(--black);
 
     cursor: pointer;
 
@@ -28,9 +28,6 @@
   
       -webkit-user-drag: none;
       user-select: none;
-      -moz-user-select: none;
-      -webkit-user-select: none;
-      -ms-user-select: none;
     }
 
     h1 {
@@ -46,19 +43,19 @@
 
   nav {
     display: flex;
+    align-items: center;
 
     font-size: 2rem; 
 
-    align-items: center;
-
     button {
       margin-left: 1rem;
+      padding: 0 .5rem .25rem; 
+
       border: none; 
       background-color: transparent;
 
       font-size: 2rem;
 
-      padding: 0 .5rem .25rem; 
       cursor: pointer;
     }
 
@@ -75,7 +72,6 @@
     }
 
     .random {
-      //background-color: var(--red-300);
       border-radius: 2rem;
       
       text-align: center;

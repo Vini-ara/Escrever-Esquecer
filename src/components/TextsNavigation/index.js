@@ -7,7 +7,7 @@ import styles from './styles.module.scss';
 
 
 export function TextsNavigation({currentCiclo, handleRedirect}) {
-  const [cicloRoute, setCicloRoute] = useState('')
+  const [cicloRoute, setCicloRoute] = useState('');
   const [prevRoute, setPrevRoute] = useState(''); 
   const [nextRoute, setNextRoute] = useState('');
 

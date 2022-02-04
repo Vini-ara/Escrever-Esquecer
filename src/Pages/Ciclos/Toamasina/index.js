@@ -8,6 +8,7 @@ import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
 import { useTitle } from "../../../hooks/useTitle";
+import { MdPictureAsPdf } from "react-icons/md";
 
 
 export function Toamasina() {
@@ -53,7 +54,14 @@ export function Toamasina() {
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>Toamasina</h2>
+          <div className={styles.aboutHeading}>
+            <h2>Toamasina</h2>
+
+            <button>
+              <MdPictureAsPdf size="2rem" />
+            </button>
+          </div>
+
           <p>
             A ideia destes textos veio do amor pela figura de Charles Darwin, o maior dos viajantes. <i>Toamasina</i> –
             que também já se chamou <i>Flores Vermelhas</i> e <i>Ver Flores Vermelhas</i> – é a tentativa de compreender como
@@ -67,7 +75,7 @@ export function Toamasina() {
           {info.map((e, index) => (
             <TextsPagination key={e.heading} data={e} isActive={page === index + 1} handleRedirect={handleRedirect} />
           ))}
-           { info.length > 1 && <TextsPaginationNav
+          {info.length > 1 && <TextsPaginationNav
             handleNavClick={handleNavClick}
             activePage={page}
             pages={info}

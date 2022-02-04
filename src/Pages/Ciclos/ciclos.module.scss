@@ -4,7 +4,7 @@
   overflow: hidden;
   position: fixed;
 
-  animation: opacity-in 2s ease; 
+  animation: opacity-in 2s ease;
 
   &.transition {
     animation: opacity-out 1s ease forwards;
@@ -45,7 +45,7 @@
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.404); 
+    background: rgba(0, 0, 0, 0.404);
     border-radius: 8px;
   }
 
@@ -54,6 +54,51 @@
 
   .about {
     padding-right: 2rem;
+
+    .aboutHeading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        position: relative;
+
+        &::before {
+          content: "Baixar Pdf";
+          color: var(--red-300);
+          background-color: var(--background-white);
+
+          position: absolute;
+          top: -2.125rem;
+          left: -75%;
+
+          font-size: 1.125rem;
+          font-weight: bold;
+
+          padding: 0.25rem 0.5rem;
+          border-radius: 1rem;
+
+          width: fit-content;
+          white-space: nowrap;
+
+          opacity: 0;
+
+          transition: opacity .3s; 
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+
+        svg {
+          color: var(--red-300);
+        }
+      }
+    }
 
     h2 {
       font-size: 3rem;
@@ -68,11 +113,11 @@
 
       &.smaller {
         text-indent: 0;
-        line-height: 1.75rem; 
+        line-height: 1.75rem;
       }
 
       &.end {
-        text-align: end; 
+        text-align: end;
       }
     }
 
@@ -87,11 +132,11 @@
     padding: 1rem 2rem;
 
     &.pdfContainer {
-      padding: 0; 
+      padding: 0;
       display: block;
       height: 100%;
 
-      animation: opacity-in 2s ease forwards; 
+      animation: opacity-in 2s ease forwards;
     }
 
     .imgContainer {
@@ -101,8 +146,8 @@
       height: fit-content;
 
       opacity: 0;
-      transition: opacity 1s; 
-      
+      transition: opacity 1s;
+
       img {
         border-radius: 1rem;
         max-width: 100%;
@@ -112,20 +157,20 @@
         width: 3rem;
         height: 3rem;
 
-        background: transparent; 
+        background: transparent;
         border: none;
 
         position: absolute;
-        cursor: pointer; 
+        cursor: pointer;
 
         color: var(--red-300);
-        transition: all .3s; 
+        transition: all 0.3s;
 
         transform: translate(-50%, -50%);
 
         &.pin1 {
           bottom: 16.5%;
-          right: 29.525%;  
+          right: 29.525%;
 
           &::before {
             content: "Boa Nova";
@@ -133,22 +178,20 @@
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: 20%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
-            //transform: translate(-50%, -50%);
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -158,8 +201,8 @@
         }
 
         &.pin2 {
-          top: 14.5%; 
-          right: 31.5%; 
+          top: 14.5%;
+          right: 31.5%;
 
           &::before {
             content: "Campo Formoso";
@@ -167,20 +210,20 @@
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: -20%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -190,29 +233,29 @@
         }
 
         &.pin3 {
-          top: 44.5%; 
+          top: 44.5%;
           right: 12%;
-          
+
           &::before {
             content: "Candeias";
             color: var(--red-300);
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: 25%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -222,8 +265,8 @@
         }
 
         &.pin4 {
-          bottom: 2%; 
-          right: 36%; 
+          bottom: 2%;
+          right: 36%;
 
           &::before {
             content: "Encruzilhada";
@@ -231,20 +274,20 @@
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: 0%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -254,8 +297,8 @@
         }
 
         &.pin5 {
-          bottom: 19.25%; 
-          left: 26%; 
+          bottom: 19.25%;
+          left: 26%;
 
           &::before {
             content: "Iuiu";
@@ -263,20 +306,20 @@
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: 60%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -286,8 +329,8 @@
         }
 
         &.pin6 {
-          top: 10%; 
-          left: 26%; 
+          top: 10%;
+          left: 26%;
 
           &::before {
             content: "Mansidão";
@@ -295,20 +338,20 @@
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: 20%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -318,8 +361,8 @@
         }
 
         &.pin7 {
-          top: 49%; 
-          right: 41%; 
+          top: 49%;
+          right: 41%;
 
           &::before {
             content: "Nova Redenção";
@@ -327,20 +370,20 @@
             background-color: var(--background-white);
             width: fit-content;
             white-space: nowrap;
-  
+
             font-size: 1.125rem;
-            font-weight: bold; 
+            font-weight: bold;
 
-            padding: .25rem .5rem;
-            border-radius: 1rem; 
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
 
-            top: -15%; 
+            top: -15%;
             left: -20%;
 
             opacity: 0;
 
-            transition: all .3s; 
-            
+            transition: all 0.3s;
+
             position: absolute;
           }
 
@@ -348,14 +391,12 @@
             opacity: 1;
           }
         }
-     
-    
+
         svg {
           position: absolute;
-          cursor: pointer; 
+          cursor: pointer;
           color: var(--red-300);
-          transition: all .3s; 
-    
+          transition: all 0.3s;
 
           &:hover {
             filter: brightness(0.9);
@@ -371,18 +412,18 @@
     display: block;
     overflow-y: auto;
 
-    padding: 1rem 3.5rem; 
+    padding: 1rem 3.5rem;
 
     .about {
       margin-bottom: 3rem;
-      padding: 0; 
+      padding: 0;
     }
 
     .contentWrapper {
       grid-template-columns: 100%;
       grid-template-rows: 1fr 2rem;
-      padding: 0; 
-      padding-bottom: 2rem; 
+      padding: 0;
+      padding-bottom: 5rem;
       gap: 1.5rem;
     }
   }
@@ -400,14 +441,14 @@
 
 @media (max-width: 425px) {
   .wrapper {
-    padding: 1rem 2rem; 
+    padding: 1rem 2rem;
     max-height: calc(100vh - 4rem);
   }
 }
 
 @keyframes opacity-in {
-  from{
-    opacity: 0; 
+  from {
+    opacity: 0;
   }
   to {
     opacity: 1;
@@ -415,8 +456,8 @@
 }
 
 @keyframes opacity-out {
-  from{
-    opacity: 1; 
+  from {
+    opacity: 1;
   }
   to {
     opacity: 0;

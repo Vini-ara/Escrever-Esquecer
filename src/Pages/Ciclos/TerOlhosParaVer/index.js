@@ -8,6 +8,7 @@ import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
 import { useTitle } from "../../../hooks/useTitle";
+import { MdPictureAsPdf } from "react-icons/md";
 
 
 export function TerOlhosParaVer() {
@@ -47,11 +48,15 @@ export function TerOlhosParaVer() {
       />
       <Header handleRedirect={handleRedirect} />
 
-
-
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>Ter Olhos para Ver</h2>
+          <div className={styles.aboutHeading}>
+            <h2>Ter Olhos para Ver</h2>
+            
+            <button>
+              <MdPictureAsPdf size="2rem"/>
+            </button>
+          </div>
           <p>
             <strong>Ter Olhos para Ver</strong> reúne textos escritos em 2019 a convite de um site especializado em cinema: 
             por isso, nota-se, são textos breves e que pretendem acima de tudo funcionar como repositório 
@@ -89,7 +94,7 @@ export function TerOlhosParaVer() {
 
         <div className={styles.contentWrapper}>
           {info.map((e, index) => (
-            <TextsPagination key={e.heading} data={e} isActive={page === index + 1} handleRedirect={handleRedirect} />
+            <TextsPagination key={index} data={e} isActive={page === index + 1} handleRedirect={handleRedirect} />
           ))}
            { info.length > 1 && <TextsPaginationNav
             handleNavClick={handleNavClick}

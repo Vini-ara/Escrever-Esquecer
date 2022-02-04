@@ -8,6 +8,7 @@ import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
 import { useTitle } from "../../../hooks/useTitle";
+import { MdPictureAsPdf } from "react-icons/md";
 
 
 export function NoMeioDiaDasCoisas() {
@@ -53,7 +54,13 @@ export function NoMeioDiaDasCoisas() {
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>No meio-dia das Coisas</h2>
+          <div className={styles.aboutHeading}>
+            <h2>No meio-dia das Coisas</h2>
+
+            <button>
+              <MdPictureAsPdf size="2rem"/>
+            </button>
+          </div>
           
           <p>
             <em>No meio-dia das Coisas</em> foi criado a partir de gravações feitas na cidade de Candeias, Bahia, em 2014. Tais registros foram inicialmente 

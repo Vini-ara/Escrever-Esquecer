@@ -8,6 +8,7 @@ import { TextsPagination } from "../../../components/TextsMenuPagination";
 import { TextsPaginationNav } from "../../../components/TextsMenuPaginationNav";
 import { data } from "../../../data/data";
 import { useTitle } from "../../../hooks/useTitle";
+import { MdPictureAsPdf } from "react-icons/md";
 
 
 export function UmSomEstrangeiro() {
@@ -51,7 +52,14 @@ export function UmSomEstrangeiro() {
 
       <section className={styles.wrapper}>
         <div className={styles.about}>
-          <h2>Um som estrangeiro</h2>
+          <div className={styles.aboutHeading}>
+            <h2>Um som estrangeiro</h2>
+
+            <button>
+                <MdPictureAsPdf size="2rem"/>
+            </button>
+          </div>
+
           <p>
             <strong>Um som estrangeiro</strong> é um exercício livre de construção crítica sobre algumas genealogias 
             musicais. Longe da prática especializada, estes textos pretendem pensar a música como uma prática puramente 
