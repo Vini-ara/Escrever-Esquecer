@@ -81,7 +81,7 @@ export function Header({handleRedirect}) {
 
     const textHref = dataObjectContent[randomDataObjectContentIndex].href; // pega a rota do texto aleatório
 
-    return navigation(`/${cicloHref}/${textHref}`) // redireciona para o texto
+    return Redirect(`/${cicloHref}/${textHref}`) // redireciona para o texto
 
   }
 

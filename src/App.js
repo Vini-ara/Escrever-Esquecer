@@ -77,6 +77,17 @@ import { Iuiu } from "./Pages/Ciclos/AlgumasCartas/Iuiu";
 import { Mansidao } from "./Pages/Ciclos/AlgumasCartas/Mansidao";
 import { NovaRedencao } from "./Pages/Ciclos/AlgumasCartas/NovaRedencao";
 
+import { OlhosAgua } from "./Pages/Ciclos/OlhosAgua";
+import { VoceCostumavaFechar } from "./Pages/Ciclos/OlhosAgua/VoceCostumavaFechar";
+import { Cao } from "./Pages/Ciclos/OlhosAgua/Cao";
+import { Guadalupe } from "./Pages/Ciclos/OlhosAgua/Guadalupe";
+import { OMarEmSeuMeio } from "./Pages/Ciclos/OlhosAgua/OMarEmSeuMeio";
+import { PareciaQueQueriam } from "./Pages/Ciclos/OlhosAgua/PareciaQueQueriam";
+import { AvioesSobrevoavam } from "./Pages/Ciclos/OlhosAgua/AvioesSobrevoavam";
+import { Viagem } from "./Pages/Ciclos/OlhosAgua/Viagem";
+import { MiCandidato } from "./Pages/Ciclos/OlhosAgua/MiCandidato";
+import { Fevereiro } from "./Pages/Ciclos/OlhosAgua/Fevereiro";
+
 
 
 // Define as rotas da aplicação
@@ -147,6 +158,17 @@ function App() {
         <Route path="/algumas-cartas/iuiu" element={<Iuiu/>} />
         <Route path="/algumas-cartas/mansidao" element={<Mansidao/>} />
         <Route path="/algumas-cartas/nova-redencao" element={<NovaRedencao/>} />
+
+        <Route path="/olhos-agua" element={<OlhosAgua />}/>
+        <Route path="/olhos-agua/voce-costumava-fechar-as-janelas-ao-primeiro-sinal-de-chuva" element={<VoceCostumavaFechar/>}/>
+        <Route path="/olhos-agua/cao" element={<Cao/>}/>
+        <Route path="/olhos-agua/guadalupe" element={<Guadalupe/>} />
+        <Route path="/olhos-agua/o-mar-em-seu-meio-e-um-deserto" element={<OMarEmSeuMeio/>} />
+        <Route path="/olhos-agua/parecia-que-queriam-mudar-o-mundo" element={<PareciaQueQueriam/>} />
+        <Route path="/olhos-agua/avioes-sobrevoavam-o-pacifico" element={<AvioesSobrevoavam/>} />
+        <Route path="/olhos-agua/viagem" element={<Viagem/>} />
+        <Route path="/olhos-agua/mi-candidato-es-el-pueblo-organizado-y-construyendo" element={<MiCandidato/>} />
+        <Route path="/olhos-agua/fevereiro" element={<Fevereiro/>} />
  
         <Route path="sobre" element={<Sobre/>} />
       </Routes>

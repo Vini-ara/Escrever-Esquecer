@@ -8,7 +8,6 @@ import pdfobject from "pdfobject";
 
 import pdf from "../../../pdf/O Sistema Exu-Ogum.pdf";
 import { useTitle } from "../../../hooks/useTitle";
-import { MdPictureAsPdf } from "react-icons/md";
 
 
 
@@ -54,10 +53,6 @@ export function OSistemaExuOgum() {
         <div className={styles.about}>
           <div className={styles.aboutHeading}>
             <h2>O Sistema Exu-Ogum</h2>
-
-            <button>
-              <MdPictureAsPdf size="2rem" />
-            </button>
           </div>
 
           <p>

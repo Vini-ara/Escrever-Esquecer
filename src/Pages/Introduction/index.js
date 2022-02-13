@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import YoutubeBackground from 'react-youtube-background'
@@ -12,16 +12,18 @@ export function Introduction() {
   const navigation = useNavigate();
 
   const viewWidth = window.innerWidth;
-  
-  useEffect(() => {
-    if(viewWidth < 768) {
+
+  function handleClick() {
+    
+    if(viewWidth <= 425) {
       navigation("home")
     }
-  }, [viewWidth, navigation]);
+    setTransition(true)
+  }
 
   return (
     <div className={styles.wrapper}>
-      <div className={`${styles.header} ${transition ? styles.transition : ''}`} onClick={() => setTransition(true)}>
+      <div className={`${styles.header} ${transition ? styles.transition : ''}`} onClick={() => handleClick()}>
         <h1>
           ESCREVER <strong>ESQUECER</strong>
         </h1>

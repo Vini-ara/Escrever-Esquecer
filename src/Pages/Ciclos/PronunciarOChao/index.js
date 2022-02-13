@@ -59,7 +59,9 @@ export function PronunciarOChao() {
             <h2>Pronunciar o Chão</h2>
 
             <button>
-              <MdPictureAsPdf size="2rem"/>
+              <a href="https://drive.google.com/file/d/1ifNnmsQv1s_j-W9oj_SL1qduf2oGMuV5/view?usp=sharing" target="_blank" rel="noreferrer">
+                <MdPictureAsPdf size="2rem"/>
+              </a>
             </button>
           </div>
 

@@ -119,7 +119,7 @@ export const data = {
           },
           {
             name: "retornaremos a este tópico no capítulo XVII",
-            href: "voltaremos-a-este-topico"
+            href: "retornaremos-a-este-topico"
           },
         ]
       },
@@ -270,6 +270,58 @@ export const data = {
           {
             name: "Nova Redenção",
             href: "nova-redencao"
+          }
+        ]
+      }
+    ]
+  },
+  olhosAgua: {
+    name: "Olhos/Água",
+    href: "olhos-agua",
+    data: [
+      {
+        heading: "",
+        content: [
+          {
+            name: "Você costumava fechar as janelas ao primeiro sinal de chuva",
+            href: "voce-costumava-fechar-as-janelas-ao-primeiro-sinal-de-chuva"
+          },
+          {
+            name: "Cão",
+            href: "cao"
+          },
+          {
+            name: "Guadalupe",
+            href: "guadalupe"
+          },
+          {
+            name: "O mar em seu meio é um deserto",
+            href: "o-mar-em-seu-meio-e-um-deserto"
+          },
+          {
+            name: "Parecia que queriam mudar o mundo",
+            href: "parecia-que-queriam-mudar-o-mundo"
+          },
+          {
+            name: "Aviões sobrevoavam o Pacífico",
+            href: "avioes-sobrevoavam-o-pacifico"
+          }
+        ]
+      },
+      {
+        heading: "",
+        content: [
+          {
+            name: "Viagem",
+            href: "viagem"
+          },
+          {
+            name: "Mi candidato es el pueblo, organizado y construyendo",
+            href: "mi-candidato-es-el-pueblo-organizado-y-construyendo"
+          },
+          {
+            name: "Fevereiro",
+            href: "fevereiro"
           }
         ]
       }

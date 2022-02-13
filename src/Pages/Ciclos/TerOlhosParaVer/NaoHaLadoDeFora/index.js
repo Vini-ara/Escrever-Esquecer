@@ -9,6 +9,8 @@ import { MdWest } from "react-icons/md";
 import styles from "../../textos.module.scss";
 import { useTitle } from "../../../../hooks/useTitle";
 
+import Youtube from "react-youtube";
+
 export function NaoHaLadoDeFora() {
   const [transition, setTransition] = useState(false); 
 
@@ -336,6 +338,11 @@ export function NaoHaLadoDeFora() {
           realidade podre que se fabrica e que se tenta impor como incontornável e unívoca. Foi esta 
           também a tentativa deste texto, enfim.
         </p>
+
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="78myYdxnH0M"
+        />
 
       </section>
 

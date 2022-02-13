@@ -9,6 +9,8 @@ import { MdWest } from "react-icons/md";
 import styles from "../../textos.module.scss";
 import { useTitle } from "../../../../hooks/useTitle";
 
+import Youtube from "react-youtube";
+
 export function CampoFormoso() {
   const [transition, setTransition] = useState(false); 
 
@@ -131,6 +133,11 @@ export function CampoFormoso() {
         <p className={styles.end}>
           Nesta hora eu sinto sede, ____. Uma sede terrível, terrível. E bebo.
         </p>
+
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="Zf8HTTSIC1I"
+        />
         
       </section>
 

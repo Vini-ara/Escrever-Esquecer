@@ -17,6 +17,8 @@
 
   .backgroundImg {
     height: 80vh;
+
+    margin-top: 2rem; 
   
     -webkit-user-drag: none;
     user-select: none;
@@ -74,42 +76,42 @@
     }
 
     &.card1 {
-      top: 0%; left: 50%;
+      top: 2.5%; left: 50%;
       transform: translateX(-50%);
       animation: opacity-in 3s ease forwards;
     }
     &.card2 {
-      top: 17%; left: 15%; 
+      top: 17%; left: 20%; 
       animation: opacity-in 3s ease forwards;
     }
   
     &.card3 {
-      top: 30%; right: 20%;
+      top: 22.76%; right: 17%;
       animation: opacity-in 3s ease forwards;
     }
   
     &.card4 { 
-      top: 51%; left: 1%;  
+      top: 39.8%; left: 9%;  
       animation: opacity-in 3s ease forwards;
     }
   
     &.card5 {
-      top: 67%; right: 8%; 
+      top: 55%; right: 8%; 
       animation: opacity-in 3s ease forwards;
     }
   
     &.card6 {
-      top: 80%; left: 20%; 
+      top: 67%; left: 20%; 
       animation: opacity-in 3s ease forwards;
     }
   
     &.card7 {
-      top: 91%; right: 18%; 
+      top: 79%; right: 13%; 
       animation: opacity-in 3s ease forwards;
     }
 
     &.card8 {
-      bottom: 9%; 
+      bottom: 5%; 
       left: 40%;
       animation: opacity-in 3s ease forwards;
     }
@@ -150,6 +152,39 @@
   }
   to {
     filter: blur(1.5rem); 
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    .card {
+      &.card2 {
+        left: 13%;
+      }
+      &.card3 {
+        right: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    overflow-y: auto;
+  }
+  .content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; 
+
+    .card {
+      position: unset;
+      
+      &.card1 {
+        transform: translateX(0);
+      }
+    }
   }
 }
 

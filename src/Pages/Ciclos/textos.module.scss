@@ -163,6 +163,14 @@
       width: 60%; 
     }
   }
+
+  .youtubeVideo {
+    margin-top: 2rem;
+    border-radius: 1rem; 
+
+    width: 40vw; 
+    height: 23vw;
+  }
 }
 
 @keyframes opacity-in {
@@ -184,10 +192,25 @@
 }
 
 @media (max-width: 1024px) {
-  h2 {
-    font-size: 2.5rem; 
-    max-width: 100%;
-    overflow: hidden;
+  .wrapper {
+    h2 {
+      font-size: 2.5rem; 
+      max-width: 100%;
+      overflow: hidden;
+    }
+  
+    .youtubeVideo {
+      width: 60vw;
+      height: 34.5vw; 
+    }
   }
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+    .youtubeVideo {
+      width: 80vw;
+      height: 46vw; 
+    }
+  }
+}

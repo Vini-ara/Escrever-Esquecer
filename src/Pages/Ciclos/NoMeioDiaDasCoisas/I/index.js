@@ -9,6 +9,8 @@ import { MdWest } from "react-icons/md";
 import styles from "../../textos.module.scss";
 import { useTitle } from "../../../../hooks/useTitle";
 
+import Youtube from "react-youtube";
+
 export function I() {
   const [transition, setTransition] = useState(false); 
 
@@ -342,6 +344,11 @@ export function I() {
         <p>
           para que digas o sim.
         </p>
+
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="xmLYM-WTMXI"
+        />
 
       </section>
 

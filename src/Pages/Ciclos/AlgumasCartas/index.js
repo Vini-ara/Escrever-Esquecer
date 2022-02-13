@@ -50,19 +50,18 @@ export function AlgumasCartas() {
             <h2>Algumas Cartas</h2>
 
             <button>
-              <MdPictureAsPdf size="2rem" />
+             
+                <MdPictureAsPdf size="2rem" />
+            
             </button>
           </div>
 
           <p>
-            Fruto de dois anos e meio de pesquisa, <strong>O Sistema Exu-Ogum</strong> (publicado com o título de Com Exu-Ogum, pelas Encruzilhadas)
-            é uma leitura crítica sobre a obra do poeta Ricardo Aleixo. Em verdade, é uma tentativa de observar como esta obra atravessa tempos,
-            lugares, pessoas, sendo motivada e motivando um conceito renovado de literatura – em que o corpo não esteja só implicado, mas seja
-            disputado e reconstruído pela experiência do sentido.
-          </p>
-
-          <p>
-            Sim, de fato <em>ter escrito ainda não existe</em>.
+            <strong>Algumas Cartas</strong> é o resultado de um ciclo de textos iniciado em 2015, que surgiu com a intenção de tornar-se um romance. 
+            Com o tempo, seu projeto mostrou não carregar tanto fôlego, e dos três eixos que ali havia restou apenas o presente. Neste trajeto pelas 
+            cidades, este ciclo pretende operar na relação entre espaço e abstração, entre destruição e fazer, entre subjetivação e dissolução, 
+            atravessando a quase dialética que o Brasil tem legado a si mesmo como modo de vida. Da tentativa de ver, restaram estas sete paisagens 
+            na neblina.
           </p>
         </div>
 

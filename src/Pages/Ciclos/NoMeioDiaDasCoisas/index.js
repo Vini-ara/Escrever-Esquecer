@@ -58,7 +58,9 @@ export function NoMeioDiaDasCoisas() {
             <h2>No meio-dia das Coisas</h2>
 
             <button>
-              <MdPictureAsPdf size="2rem"/>
+              <a href="https://drive.google.com/file/d/16uVY69jZBI8aqbryrs00QU56WAaeaABe/view?usp=sharing" target="_blank" rel="noreferrer">
+                <MdPictureAsPdf size="2rem"/>
+              </a>
             </button>
           </div>
           
