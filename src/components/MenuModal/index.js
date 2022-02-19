@@ -49,6 +49,33 @@ export function MenuModal({handleRedirect, isActive, handleModalState}) {
     };
     return;
   };
+
+    // redireciona o usuário para um texto aleatório
+    function leveMeAQualquerLugar() {
+      const objectLength = Object.keys(data).length; // tamanho do objeto que contém os ciclos 
+  
+      const randomCicloIndex = Math.floor(objectLength * Math.random()); // gera um index aleatório para acessar um ciclo
+  
+      const ciclo = data[Object.keys(data)[randomCicloIndex]]; // acessa um ciclo aleatório
+  
+      const cicloHref = ciclo.href; // guarda a rota referente a esse ciclo
+  
+      // se o ciclo for o "O Sistema Exu-Ogum" ele não tem textos, então redireciona para a página do ciclo
+      if(!ciclo?.data) {
+        return navigation(`/${cicloHref}`)
+      }
+  
+      const dataRandomIndex = Math.floor(ciclo.data.length * Math.random()); // gera um index aleatório para acessar um objeto dentro do array data
+  
+      const dataObjectContent = ciclo.data[dataRandomIndex].content; // acessa esse objeto aleatório
+  
+      const randomDataObjectContentIndex = Math.floor(dataObjectContent.length * Math.random()); // gera um index para um texto aleatório
+  
+      const textHref = dataObjectContent[randomDataObjectContentIndex].href; // pega a rota do texto aleatório
+  
+      return Redirect(`/${cicloHref}/${textHref}`) // redireciona para o texto
+  
+    }
   
   return (
     <div className={`${styles.modalOverlay} ${isActive ? styles.modalActive : ''}`} onClick={handleOverlayClick}>
@@ -81,7 +108,7 @@ export function MenuModal({handleRedirect, isActive, handleModalState}) {
             </ul>
           </li>
 
-          {hasLevemeButton && <li><button onClick={() => Redirect("/sobre")}>Leve-me a qualquer lugar</button></li> }
+          {hasLevemeButton && <li><button onClick={leveMeAQualquerLugar}>Leve-me a qualquer lugar</button></li> }
         </ul>
       </div>
     </div>
