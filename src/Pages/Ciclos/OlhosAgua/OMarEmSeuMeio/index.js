@@ -46,6 +46,11 @@ export function OMarEmSeuMeio() {
         <h2>O mar em seu meio é um deserto</h2>
         <hr/>
 
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="Fb8A-X3RnIE"
+        />
+
         <p>
           Chegar é apenas sobre intuir o percurso findo. Morreria quantas vezes fosse preciso, para isso. Morreria, com 
           um sorriso no rosto, entre as caixas vazias de um porto. Mas meu corpo continuaria sendo levado, eu o pressinto, 
@@ -107,11 +112,6 @@ export function OMarEmSeuMeio() {
           passado. Ancorado, e seguindo. Ter visto tudo é o mesmo do que jamais ter enxergado coisa alguma. É impossível 
           anteceder uma única certeza. Chegar é apenas sobre intuir o percurso findo.
         </p>
-
-        <Youtube 
-          className={styles.youtubeVideo}
-          videoId="Fb8A-X3RnIE"
-        />
 
       </section>
 

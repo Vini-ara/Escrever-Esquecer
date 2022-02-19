@@ -50,9 +50,9 @@ export function AlgumasCartas() {
             <h2>Algumas Cartas</h2>
 
             <button>
-             
-                <MdPictureAsPdf size="2rem" />
-            
+              <a href="https://drive.google.com/file/d/1arVwpg1UgEaLOY_u_ie1Mip_NypXrIAC/view?usp=sharing" target="_blank" rel="noreferrer">
+                <MdPictureAsPdf size="2rem"/>
+              </a>
             </button>
           </div>
 

@@ -43,7 +43,7 @@ export function OlhosAgua() {
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
       <img
         className={styles.backgroundImg}
-        src="https://drive.google.com/uc?export=view&id=1VwhNL_hwn_tsMPr_QwctqEA2tOnWhQ4M"
+        src="https://drive.google.com/uc?export=view&id=19GvGRjht8RQfOtEv-ugBMfWPU59ZOqr2"
         alt="plano de fundo"
         ref={background}
         onLoad={handleBackgroundLoad}
@@ -58,7 +58,9 @@ export function OlhosAgua() {
             <h2>Olhos/Água</h2>
 
             <button>
-              <MdPictureAsPdf size="2rem"/>
+              <a href="https://drive.google.com/file/d/1vGIPv4ybNd873nQWCAXTbMFpcJAGXVXE/view?usp=sharing" target="_blank" rel="noreferrer">
+                <MdPictureAsPdf size="2rem"/>
+              </a>
             </button>
           </div>
           

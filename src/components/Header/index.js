@@ -32,10 +32,12 @@ export function Header({handleRedirect}) {
       setPathHasMenu(true);
     } else if(location.pathname === "/home" || location.pathname === "/sobre") {
       setPathHasMenu(false);
+      setModalActive(false);
     } else if(location.pathname !== "/home" || location.pathname !== "/sobre") {
       setPathHasMenu(true);
     } else {
       setPathHasMenu(false);
+      setModalActive(false);
     }
   }, [width, location.pathname]);
 

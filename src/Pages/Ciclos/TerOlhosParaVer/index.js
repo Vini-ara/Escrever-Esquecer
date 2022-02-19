@@ -54,7 +54,9 @@ export function TerOlhosParaVer() {
             <h2>Ter Olhos para Ver</h2>
             
             <button>
-              <MdPictureAsPdf size="2rem"/>
+              <a href="https://drive.google.com/file/d/1ooWqsnZpk2hw7p5zngJNBJ0VnRO9Kg28/view?usp=sharing" target="_blank" rel="noreferrer">
+                <MdPictureAsPdf size="2rem"/>
+              </a>
             </button>
           </div>
           <p>

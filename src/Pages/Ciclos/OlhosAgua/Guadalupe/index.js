@@ -46,7 +46,10 @@ export function Guadalupe() {
         <h2>Guadalupe</h2>
         <hr/>
 
-        <p className={styles.center}><strong>1</strong></p>
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="t2pL5LiLMbQ"
+        />
 
         <p>Eu te amava como se ama um continente.</p>
 
@@ -146,11 +149,6 @@ export function Guadalupe() {
         <p>Pois tu morreste como morre um rio.</p>
 
         <p>E, como a sede, eu sei que você permanece.</p>
-
-        <Youtube 
-          className={styles.youtubeVideo}
-          videoId="t2pL5LiLMbQ"
-        />
 
       </section>
 

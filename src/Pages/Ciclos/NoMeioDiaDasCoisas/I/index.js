@@ -46,6 +46,11 @@ export function I() {
         <h2>I.</h2>
         <hr/>
 
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="xmLYM-WTMXI"
+        />
+
         <p>
           Ó padarias, ó domingos, ó viadutos, qual seria a voz de sua voz? Como se enuncia um corpo ainda sem corpo? E como se 
           colocaria – por qual fenda, por qual orifício – uma alma nítida nas dobras deste mundo?
@@ -344,11 +349,6 @@ export function I() {
         <p>
           para que digas o sim.
         </p>
-
-        <Youtube 
-          className={styles.youtubeVideo}
-          videoId="xmLYM-WTMXI"
-        />
 
       </section>
 

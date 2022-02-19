@@ -56,7 +56,9 @@ export function UmSomEstrangeiro() {
             <h2>Um som estrangeiro</h2>
 
             <button>
-                <MdPictureAsPdf size="2rem"/>
+              <a href="https://drive.google.com/file/d/1tbSRbWv-A_U9Hkaysh7NT3etmcasaQCQ/view?usp=sharing" target="_blank" rel="noreferrer"> 
+                <MdPictureAsPdf size="2rem" />
+              </a>
             </button>
           </div>
 

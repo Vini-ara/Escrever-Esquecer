@@ -44,7 +44,7 @@ export function Home() {
             <h2>Pronunciar o Chão</h2>
           </button>
 
-          <button className={`${styles.card} ${styles.card2}`} onClick={() => { handleRedirect("/algumas-cartas")}} >
+          <button className={`${styles.card} ${styles.card2} ${styles.cardEven}`} onClick={() => { handleRedirect("/algumas-cartas")}} >
             <h2>Algumas Cartas</h2>
           </button>
 
@@ -52,7 +52,7 @@ export function Home() {
             <h2>Ter Olhos pra Ver</h2>
           </button>
 
-          <button className={`${styles.card} ${styles.card4}`} onClick={() => { handleRedirect("/um-som-estrangeiro")}} >
+          <button className={`${styles.card} ${styles.card4} ${styles.cardEven}`} onClick={() => { handleRedirect("/um-som-estrangeiro")}} >
             <h2>Um som estrangeiro</h2>
           </button>
          
@@ -60,7 +60,7 @@ export function Home() {
             <h2>O Sistema Exu-Ogum</h2>
           </button>
 
-          <button className={`${styles.card} ${styles.card6}`} onClick={() => {handleRedirect("/toamasina")}}>
+          <button className={`${styles.card} ${styles.card6} ${styles.cardEven}`} onClick={() => {handleRedirect("/toamasina")}}>
             <h2>Toamasina</h2>
          </button>  
 
@@ -68,7 +68,7 @@ export function Home() {
             <h2>No meio-dia das coisas</h2>
           </button>
 
-          <button className={`${styles.card} ${styles.card8}`} onClick={() => {handleRedirect("/olhos-agua")}}>
+          <button className={`${styles.card} ${styles.card8} ${styles.cardEven}`} onClick={() => {handleRedirect("/olhos-agua")}}>
             <h2>Olhos/Água</h2>
           </button> 
         </div>

@@ -46,6 +46,11 @@ export function CampoFormoso() {
         <h2>Campo Formoso, ______________________.</h2>
         <hr/>
 
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="Zf8HTTSIC1I"
+        />
+
         <p>
           ______,
         </p>
@@ -133,11 +138,6 @@ export function CampoFormoso() {
         <p className={styles.end}>
           Nesta hora eu sinto sede, ____. Uma sede terrível, terrível. E bebo.
         </p>
-
-        <Youtube 
-          className={styles.youtubeVideo}
-          videoId="Zf8HTTSIC1I"
-        />
         
       </section>
 

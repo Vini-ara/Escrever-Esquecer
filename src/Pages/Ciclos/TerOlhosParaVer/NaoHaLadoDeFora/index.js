@@ -46,6 +46,11 @@ export function NaoHaLadoDeFora() {
         <h2>Não há lado de fora</h2>
         <hr/>
 
+        <Youtube 
+          className={styles.youtubeVideo}
+          videoId="78myYdxnH0M"
+        />
+
         <p className={styles.center}><strong>1</strong></p>
 
         <p>
@@ -338,11 +343,6 @@ export function NaoHaLadoDeFora() {
           realidade podre que se fabrica e que se tenta impor como incontornável e unívoca. Foi esta 
           também a tentativa deste texto, enfim.
         </p>
-
-        <Youtube 
-          className={styles.youtubeVideo}
-          videoId="78myYdxnH0M"
-        />
 
       </section>
 

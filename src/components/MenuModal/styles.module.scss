@@ -44,6 +44,8 @@
     z-index: 999;
 
     transition: width 1s; 
+
+    overflow-y: auto; 
     
     h2 {
       margin-bottom: 2rem;
@@ -103,7 +105,7 @@
       width: 2rem; 
 
       position: absolute;
-      top: .5rem; right: .5rem;
+      top: .5rem; right: 1rem;
 
       cursor: pointer;
 
