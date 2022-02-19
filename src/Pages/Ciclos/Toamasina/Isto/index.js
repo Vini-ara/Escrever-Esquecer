@@ -164,8 +164,9 @@ export function Isto() {
           ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-
           ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-
           sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-
-          sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-
+          sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-
           sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-
+          sim-ser:
         </p>
         <p> sim-sim-ser: </p>
         <p> sim-sim-sim-ser-ceder: </p>
