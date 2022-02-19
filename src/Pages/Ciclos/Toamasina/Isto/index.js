@@ -10,14 +10,14 @@ import styles from "../../textos.module.scss";
 import { useTitle } from "../../../../hooks/useTitle";
 
 export function Isto() {
-  const [transition, setTransition] = useState(false); 
+  const [transition, setTransition] = useState(false);
 
   const navigation = useNavigate();
 
   useTitle("Isto");
 
   function handleRedirect(path) {
-    
+
     setTransition(true)
     setTimeout(() => navigation(path), 1000)
   }
@@ -32,18 +32,18 @@ export function Isto() {
   return (
     <div className={`${styles.container} ${transition ? styles.transition : ''}`}>
 
-      <Header handleRedirect={handleRedirect}/>
+      <Header handleRedirect={handleRedirect} />
 
-      
+
       <section className={styles.wrapper}>
-      
+
         <div className={styles.backLink} onClick={() => handleRedirect('/toamasina')}>
-          <MdWest  size="3rem" />
+          <MdWest size="3rem" />
         </div>
 
         <h2>Isto</h2>
-        <hr/>
-      
+        <hr />
+
         <p> -não: </p>
         <p> isto-sim: </p>
         <p> eis-eis-outra-vez-sim-eis: </p>
@@ -100,7 +100,7 @@ export function Isto() {
         <p> algo-a-si: tudo: algo: agora: </p>
         <p> curso-esteio-cadena-pulso: </p>
         <p> agora: </p>
-        <p> 
+        <p>
           de-fora-escorrendo-espirando-dobrando-descendo-animando-espantando-tingindo-salgando-subindo-girando-rodando-tornando-cindindo-escorando-esbatendo-forçando-forçando-forçando-forçando-forçando-forçando-forçando-forçando-forçando:
         </p>
         <p> agora: </p>
@@ -135,7 +135,6 @@ export function Isto() {
         <p> sendo-outro-sendo-algo-ainda-agora: </p>
         <p> deixar-ser: </p>
         <p> não-deixar-cessar: </p>
-        <p> ser-maior-e-maior: </p>
         <p> empurrar-e-mais-ainda-empurrar-pra-fora: </p>
         <p> empurrar-dentro-dobrar-dentro-lado-fora: </p>
         <p> quando-pulsar-correr-pulsar-ser-pra-fora: </p>
@@ -143,24 +142,39 @@ export function Isto() {
         <p> ser-ceder: </p>
         <p> não-deixar-de-cessar: </p>
         <p> quando: </p>
-        <p> sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim </p>
-        <p> sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim </p>
-        <p> sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim </p>
         <p>
-          sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim 
+          sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-
+          sim sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-
+          sim-sim sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-
+          sim-sim-sim sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-
+          sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-
+          sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-
+          sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-
+          ser-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-
+          ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-
+          sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-
+          sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-
+          sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-ser-sim-sim-sim-sim-sim-
+          sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim sim-sim-sim-ser-sim-sim-sim-sim-
+          sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim sim-sim-sim-ser-sim-sim-sim-
+          sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim sim-sim-sim-ser-sim-sim-
+          sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-
+          sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-
+          sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-
+          ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-
+          ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-
+          sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-
+          sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-
+          sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-
         </p>
-        <p>sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim </p>
-        <p>sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim </p>
-        <p>
-          sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-sim-sim-sim-sim-ser-sim-sim-sim-sim-sim-sim-ser:
-        </p>
+        <p> sim-sim-ser: </p>
         <p> sim-sim-sim-ser-ceder: </p>
         <p> sim-sim-ser: </p>
         <p> sim-sim: </p>
         <p> sim- </p>
       </section>
 
-      <TextsNavigation currentCiclo="toamasina" handleRedirect={handleRedirect}/>
+      <TextsNavigation currentCiclo="toamasina" handleRedirect={handleRedirect} />
     </div>
   );
 }
